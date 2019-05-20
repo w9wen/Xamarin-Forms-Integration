@@ -4,18 +4,17 @@ using Prism.Navigation;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using XamarinFormsIntegration.Views;
 
 namespace XamarinFormsIntegration.ViewModels
 {
-    public class MainPageViewModel : ViewModelBase
+    public class PrismHomePageViewModel : ViewModelBase
     {
         public DelegateCommand<string> ButtonCommand { get; private set; }
-        public MainPageViewModel(INavigationService navigationService)
+        public PrismHomePageViewModel(INavigationService navigationService)
             : base(navigationService)
         {
-            Title = "Main Page";
+            Title = "Prism Library";
             ButtonCommand = new DelegateCommand<string>(ButtonExecute);
         }
 
@@ -23,8 +22,8 @@ namespace XamarinFormsIntegration.ViewModels
         {
             switch (subject)
             {
-                case "prism":
-                    NavigationService.NavigateAsync(nameof(PrismHomePage));
+                case "property_changed":
+                    NavigationService.NavigateAsync(nameof(PrismPropertyChangedPage));
                     break;
                 default:
                     break;
