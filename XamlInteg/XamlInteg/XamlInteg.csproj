@@ -10,10 +10,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="Views\PrismHomePage.xaml">
+    <EmbeddedResource Update="Views\Prism\PrismHomePage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\PrismPropertyChangedPage.xaml">
+    <EmbeddedResource Update="Views\Prism\PrismPropertyChangedPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
@@ -31,11 +31,6 @@
     <None Update="Views\PrismPropertyChangedPage.xaml">
       <Generator>MSBuild:Compile</Generator>
     </None>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="ViewModels\Prism\" />
-    <Folder Include="Views\Prism\" />
   </ItemGroup>
 
 </Project>
