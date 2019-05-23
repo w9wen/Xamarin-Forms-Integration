@@ -6,6 +6,7 @@
 
     <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
         <Button Text="Prism" Command="{Binding ButtonCommand}" CommandParameter="prism"/>
+        <Button Text="Essentials" Command="{Binding ButtonCommand}" CommandParameter="essentials"/>
     </StackLayout>
 
 </ContentPage>

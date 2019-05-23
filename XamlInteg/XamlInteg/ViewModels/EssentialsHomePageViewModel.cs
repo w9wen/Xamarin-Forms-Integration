@@ -4,18 +4,18 @@ using Prism.Navigation;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using XamlInteg.Views;
 
 namespace XamlInteg.ViewModels
 {
-    public class MainPageViewModel : ViewModelBase
+    public class EssentialsHomePageViewModel : ViewModelBase
     {
-        public DelegateCommand<string> ButtonCommand { get; private set; }
-        public MainPageViewModel(INavigationService navigationService)
+
+       public DelegateCommand<string> ButtonCommand { get; private set; }
+        public EssentialsHomePageViewModel(INavigationService navigationService) 
             : base(navigationService)
         {
-            Title = "Main Page";
+            Title = "Xamarin Essentials";
             ButtonCommand = new DelegateCommand<string>(ButtonExecute);
         }
 
@@ -23,15 +23,13 @@ namespace XamlInteg.ViewModels
         {
             switch (subject)
             {
-                case "prism":
-                    NavigationService.NavigateAsync(nameof(PrismHomePage));
-                    break;
-                case "essentials":
-                    NavigationService.NavigateAsync(nameof(EssentialsHomePage));
+                case "connectivity":
+                    NavigationService.NavigateAsync(nameof(EssentialConnectivityPage));
                     break;
                 default:
                     break;
             }
         }
+
     }
 }

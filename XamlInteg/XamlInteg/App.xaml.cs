@@ -32,6 +32,8 @@ namespace XamlInteg
             containerRegistry.RegisterForNavigation<MainPage, MainPageViewModel>();
             containerRegistry.RegisterForNavigation<PrismHomePage, PrismHomePageViewModel>();
             containerRegistry.RegisterForNavigation<PrismPropertyChangedPage, PrismPropertyChangedPageViewModel>();
+            containerRegistry.RegisterForNavigation<EssentialsHomePage, EssentialsHomePageViewModel>();
+            containerRegistry.RegisterForNavigation<EssentialConnectivityPage, EssentialConnectivityPageViewModel>();
         }
     }
 }
