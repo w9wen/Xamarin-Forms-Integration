@@ -23,7 +23,7 @@ namespace XamlInteg.ViewModels
         {
             switch (subject)
             {
-                case "connectivity":
+                case "Connectivity":
                     NavigationService.NavigateAsync(nameof(EssentialConnectivityPage));
                     break;
                 case "DeviceInfo":

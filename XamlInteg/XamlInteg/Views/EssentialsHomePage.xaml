@@ -6,7 +6,7 @@
              x:Class="XamlInteg.Views.EssentialsHomePage">
     <StackLayout>
         <Button Text="Connectivity"
-                Command="{Binding ButtonCommand}" CommandParameter="connectivity"/>
+                Command="{Binding ButtonCommand}" CommandParameter="Connectivity"/>
         <Button Text="Device Information"
                 Command="{Binding ButtonCommand}" CommandParameter="DeviceInfo"/>
     </StackLayout>

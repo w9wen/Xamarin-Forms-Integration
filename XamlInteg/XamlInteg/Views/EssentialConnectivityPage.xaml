@@ -6,6 +6,7 @@
              x:Class="XamlInteg.Views.EssentialConnectivityPage">
 
     <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
-        <Label Text="Connectivity"/>
+        <Label Text="{Binding NetworkAccess, StringFormat='Network Access: {0}'}"/>
+        <Label Text="{Binding ConnectionProfiles, StringFormat='Connection Profiles: {0}'}"/>
     </StackLayout>
 </ContentPage>
