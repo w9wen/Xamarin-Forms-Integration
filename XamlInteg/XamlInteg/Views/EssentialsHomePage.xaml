@@ -9,6 +9,8 @@
                 Command="{Binding ButtonCommand}" CommandParameter="Connectivity"/>
         <Button Text="Device Information"
                 Command="{Binding ButtonCommand}" CommandParameter="DeviceInfo"/>
+        <Button Text="App Info"
+                Command="{Binding ButtonCommand}" CommandParameter="AppInfo"/>
     </StackLayout>
   
 </ContentPage>

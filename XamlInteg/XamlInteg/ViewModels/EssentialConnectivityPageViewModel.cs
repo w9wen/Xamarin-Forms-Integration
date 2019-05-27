@@ -8,7 +8,7 @@ using Xamarin.Essentials;
 
 namespace XamlInteg.ViewModels
 {
-    public class EssentialConnectivityPageViewModel : ViewModelBase
+    public class EssentialConnectivityPageViewModel : BindableBase
     {
         public NetworkAccess NetworkAccess => Connectivity.NetworkAccess;
         public string ConnectionProfiles
@@ -22,8 +22,7 @@ namespace XamlInteg.ViewModels
             }
         }
 
-        public EssentialConnectivityPageViewModel(INavigationService navagaionService)
-            :base(navagaionService)
+        public EssentialConnectivityPageViewModel()
         {
             Connectivity.ConnectivityChanged += Connectivity_ConnectivityChanged;
         }
