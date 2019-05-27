@@ -10,5 +10,6 @@
         <Label Text="{Binding BuildString, StringFormat='BuildString: {0}'}"/>
         <Label Text="{Binding Version, StringFormat='Version: {0}'}"/>
         <Label Text="{Binding VersionString, StringFormat='VersionString: {0}'}"/>
+        <Button Text="Open Setting" Command="{Binding ShowSettingsUICommand}"/>
     </StackLayout>
 </ContentPage>

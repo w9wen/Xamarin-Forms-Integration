@@ -15,9 +15,10 @@ namespace XamlInteg.ViewModels
         public Version Version => AppInfo.Version;
         public string VersionString => AppInfo.VersionString;
 
+        public DelegateCommand ShowSettingsUICommand { get; }
         public EssentialAppInfoPageViewModel()
         {
-
+            ShowSettingsUICommand = new DelegateCommand(() => AppInfo.ShowSettingsUI());
         }
     }
 }
