@@ -26,6 +26,9 @@ namespace XamlInteg.ViewModels
                 case "connectivity":
                     NavigationService.NavigateAsync(nameof(EssentialConnectivityPage));
                     break;
+                case "DeviceInfo":
+                    NavigationService.NavigateAsync(nameof(EssentialDeviceInfoPage));
+                    break;
                 default:
                     break;
             }

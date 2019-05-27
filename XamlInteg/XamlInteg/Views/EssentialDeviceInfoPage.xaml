@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="XamlInteg.Views.EssentialDeviceInfoPage"
+             xmlns:deviceInfo="clr-namespace:Xamarin.Essentials;assembly=Xamarin.Essentials">
+    <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+        <Label Text="{Binding Model, StringFormat='Model: {0}'}"/>
+        <Label Text="{Binding Manufacturer, StringFormat='Manufacturer: {0}'}"/>
+        <Label Text="{Binding Name, StringFormat='Device Name: {0}'}"/>
+        <Label Text="{Binding Version, StringFormat='Version: {0}'}"/>
+        <Label Text="{Binding Platform, StringFormat='Platform: {0}'}"/>
+        <Label Text="{Binding Idiom, StringFormat='Idiom: {0}'}"/>
+        <Label Text="{Binding Type, StringFormat='Type: {0}'}"/>
+    </StackLayout>
+</ContentPage>
