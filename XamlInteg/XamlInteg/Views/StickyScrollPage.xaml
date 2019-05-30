@@ -21,16 +21,18 @@
             </Grid.RowDefinitions>
 
             <ScrollView Grid.Row="0" x:Name="Scroll_Pic">
-                <StackLayout x:Name="StackLaylou_Pic">
-                    <Label Text="#7 Picture!" FontSize="24" BackgroundColor="Aqua" HorizontalTextAlignment="Center"/>
-                    <Image Aspect="AspectFit" Source="http://lorempixel.com/1920/1080/sports/7/"/>
+                <AbsoluteLayout x:Name="AbsoluteLayout_Pic">
+                    <Label AbsoluteLayout.LayoutBounds="0, 0, 1, 40" AbsoluteLayout.LayoutFlags="All"
+                        Text="#7 Picture!" FontSize="24" BackgroundColor="Aqua" HorizontalTextAlignment="Center"/>
+                    <Image  AbsoluteLayout.LayoutBounds="0, 0.2, 1, 40" AbsoluteLayout.LayoutFlags="All" 
+                            Aspect="AspectFit" Source="http://lorempixel.com/1920/1080/sports/7/"/>
                     <Label x:Name="Label_Picture8" Text="#8 Picture!" FontSize="24" BackgroundColor="Aqua" HorizontalTextAlignment="Center"/>
                     <Image Aspect="AspectFit" Source="http://lorempixel.com/1920/1080/sports/8/"/>
                     <Label Text="#9 Picture!" FontSize="24" BackgroundColor="Aqua" HorizontalTextAlignment="Center"/>
                     <Image Aspect="AspectFit" Source="http://lorempixel.com/1920/1080/sports/9/"/>
                     <Label Text="#10 Picture!" FontSize="24" BackgroundColor="Aqua" HorizontalTextAlignment="Center"/>
                     <Image Aspect="AspectFit" Source="http://lorempixel.com/1920/1080/sports/10/"/>
-                </StackLayout>
+                </AbsoluteLayout>
             </ScrollView>
 
             <StackLayout Grid.Row="1" >
