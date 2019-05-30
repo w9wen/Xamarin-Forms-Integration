@@ -4,7 +4,8 @@
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="XamlInteg.Views.EssentialDeviceInfoPage"
-             xmlns:deviceInfo="clr-namespace:Xamarin.Essentials;assembly=Xamarin.Essentials">
+             xmlns:deviceInfo="clr-namespace:Xamarin.Essentials;assembly=Xamarin.Essentials"
+             Title="Device Info">
     <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
         <Label Text="{Binding Model, StringFormat='Model: {0}'}"/>
         <Label Text="{Binding Manufacturer, StringFormat='Manufacturer: {0}'}"/>

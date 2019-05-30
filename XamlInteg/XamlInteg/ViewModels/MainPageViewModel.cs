@@ -29,6 +29,9 @@ namespace XamlInteg.ViewModels
                 case "essentials":
                     NavigationService.NavigateAsync(nameof(EssentialsHomePage));
                     break;
+                case "android":
+                    NavigationService.NavigateAsync(nameof(AndroidSpecificsPage));
+                    break;
                 default:
                     break;
             }
