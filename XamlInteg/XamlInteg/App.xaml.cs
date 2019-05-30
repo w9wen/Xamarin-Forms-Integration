@@ -39,6 +39,7 @@ namespace XamlInteg
             containerRegistry.RegisterForNavigation<AndroidSpecificsPage, AndroidSpecificsPageViewModel>();
             containerRegistry.RegisterForNavigation<SyncfusionHomePage, SyncfusionHomePageViewModel>();
             containerRegistry.RegisterForNavigation<SyncListViewPage, SyncListViewPageViewModel>();
+            containerRegistry.RegisterForNavigation<StickyScrollPage, StickyScrollPageViewModel>();
         }
     }
 }

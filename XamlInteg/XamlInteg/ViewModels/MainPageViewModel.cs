@@ -35,6 +35,9 @@ namespace XamlInteg.ViewModels
                 case "Syncfusion":
                     NavigationService.NavigateAsync(nameof(SyncfusionHomePage));
                     break;
+                case "StickyScroll":
+                    NavigationService.NavigateAsync(nameof(StickyScrollPage));
+                    break;
                 default:
                     break;
             }
