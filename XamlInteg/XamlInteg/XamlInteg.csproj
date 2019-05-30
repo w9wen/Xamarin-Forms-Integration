@@ -11,25 +11,25 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="Views\EssentialAppInfoPage.xaml.cs">
+    <Compile Update="Views\Essentials\EssentialAppInfoPage.xaml.cs">
       <DependentUpon>EssentialAppInfoPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="Views\AndroidSpecificsPage.xaml">
+    <EmbeddedResource Update="Views\Specifics\AndroidSpecificsPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\EssentialAppInfoPage.xaml">
+    <EmbeddedResource Update="Views\Essentials\EssentialAppInfoPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\EssentialConnectivityPage.xaml">
+    <EmbeddedResource Update="Views\Essentials\EssentialConnectivityPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\EssentialDeviceInfoPage.xaml">
+    <EmbeddedResource Update="Views\Essentials\EssentialDeviceInfoPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\EssentialsHomePage.xaml">
+    <EmbeddedResource Update="Views\Essentials\EssentialsHomePage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\Prism\PrismHomePage.xaml">
