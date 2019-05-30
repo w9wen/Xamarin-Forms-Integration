@@ -32,6 +32,9 @@ namespace XamlInteg.ViewModels
                 case "android":
                     NavigationService.NavigateAsync(nameof(AndroidSpecificsPage));
                     break;
+                case "Syncfusion":
+                    NavigationService.NavigateAsync(nameof(SyncfusionHomePage));
+                    break;
                 default:
                     break;
             }

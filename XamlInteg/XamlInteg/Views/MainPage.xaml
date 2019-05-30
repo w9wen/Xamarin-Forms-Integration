@@ -8,6 +8,7 @@
         <Button Text="Prism" Command="{Binding ButtonCommand}" CommandParameter="prism"/>
         <Button Text="Essentials" Command="{Binding ButtonCommand}" CommandParameter="essentials"/>
         <Button Text="Android Specifics" Command="{Binding ButtonCommand}" CommandParameter="android"/>
+        <Button Text="Syncfusion" Command="{Binding ButtonCommand}" CommandParameter="Syncfusion"/>
     </StackLayout>
 
 </ContentPage>

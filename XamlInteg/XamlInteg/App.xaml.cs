@@ -37,6 +37,8 @@ namespace XamlInteg
             containerRegistry.RegisterForNavigation<EssentialDeviceInfoPage, EssentialDeviceInfoPageViewModel>(); containerRegistry.RegisterForNavigation<EssentialDeviceInfoPage, EssentialDeviceInfoPageViewModel>();
             containerRegistry.RegisterForNavigation<EssentialAppInfoPage, EssentialAppInfoPageViewModel>();
             containerRegistry.RegisterForNavigation<AndroidSpecificsPage, AndroidSpecificsPageViewModel>();
+            containerRegistry.RegisterForNavigation<SyncfusionHomePage, SyncfusionHomePageViewModel>();
+            containerRegistry.RegisterForNavigation<SyncListViewPage, SyncListViewPageViewModel>();
         }
     }
 }
