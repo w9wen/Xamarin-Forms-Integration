@@ -40,6 +40,7 @@ namespace XamlInteg
             containerRegistry.RegisterForNavigation<SyncfusionHomePage, SyncfusionHomePageViewModel>();
             containerRegistry.RegisterForNavigation<SyncListViewPage, SyncListViewPageViewModel>();
             containerRegistry.RegisterForNavigation<StickyScrollPage, StickyScrollPageViewModel>();
+            containerRegistry.RegisterForNavigation<FormsPage, FormsPageViewModel>();
         }
     }
 }
