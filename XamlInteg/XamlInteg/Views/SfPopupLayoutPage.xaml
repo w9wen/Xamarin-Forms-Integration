@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:checkbox="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+             xmlns:popuplayout="clr-namespace:Syncfusion.XForms.PopupLayout;assembly=Syncfusion.SfPopupLayout.XForms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="XamlInteg.Views.SfPopupLayoutPage"
+             Padding="0, 50, 0 ,0">
+
+    <popuplayout:SfPopupLayout x:Name="PopupLayout_Test" BackgroundColor="Green">
+
+        <popuplayout:SfPopupLayout.Content>
+            <StackLayout BackgroundColor="Yellow">
+                <checkbox:SfCheckBox x:Name="CheckBox_ShowPopup" Text="Show Syncfution PopupLayout" BackgroundColor="Blue" TextColor="White"
+                                     StateChanged="CheckBox_ShowPopup_StateChanged"/>
+            </StackLayout>
+        </popuplayout:SfPopupLayout.Content>
+
+        <popuplayout:SfPopupLayout.PopupView>
+            <popuplayout:PopupView ShowHeader="False"
+                                           AcceptButtonText="DISCARD" 
+                                           DeclineButtonText="CANCEL"
+                                           AppearanceMode="TwoButton"
+                                           HeightRequest="360"
+                                           BackgroundColor="Pink">
+                <popuplayout:PopupView.ContentTemplate>
+                    <DataTemplate>
+                        <AbsoluteLayout BackgroundColor="White" Padding="15,20,0,0">
+                            <Label AbsoluteLayout.LayoutBounds="0, 0, 1, 1" AbsoluteLayout.LayoutFlags="All"
+                                FontSize="16"  BackgroundColor="White" TextColor="Gray" Text="Discard draft?"/>
+                        </AbsoluteLayout>
+                    </DataTemplate>
+                </popuplayout:PopupView.ContentTemplate>
+
+            </popuplayout:PopupView>
+        </popuplayout:SfPopupLayout.PopupView>
+
+    </popuplayout:SfPopupLayout>
+
+
+</ContentPage>

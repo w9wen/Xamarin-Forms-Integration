@@ -24,6 +24,7 @@ namespace XamlInteg
             InitializeComponent();
 
             await NavigationService.NavigateAsync("NavigationPage/MainPage");
+            //await NavigationService.NavigateAsync(nameof(SfPopupLayoutPage));
         }
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
@@ -41,6 +42,7 @@ namespace XamlInteg
             containerRegistry.RegisterForNavigation<SyncListViewPage, SyncListViewPageViewModel>();
             containerRegistry.RegisterForNavigation<StickyScrollPage, StickyScrollPageViewModel>();
             containerRegistry.RegisterForNavigation<FormsPage, FormsPageViewModel>();
+            containerRegistry.RegisterForNavigation<SfPopupLayoutPage, SfPopupLayoutPageViewModel>();
         }
     }
 }

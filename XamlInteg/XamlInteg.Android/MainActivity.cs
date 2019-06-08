@@ -4,6 +4,7 @@ using Android.OS;
 using Android.Runtime;
 using Prism;
 using Prism.Ioc;
+using Syncfusion.XForms.Android.PopupLayout;
 
 namespace XamlInteg.Droid
 {
@@ -20,6 +21,9 @@ namespace XamlInteg.Droid
             Xamarin.Essentials.Platform.Init(this, bundle);
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
+
+            SfPopupLayoutRenderer.Init();
+
             LoadApplication(new App(new AndroidInitializer()));
         }
 

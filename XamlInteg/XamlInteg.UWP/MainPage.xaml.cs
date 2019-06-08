@@ -1,4 +1,5 @@
-﻿using Prism;
+using Syncfusion.XForms.UWP.PopupLayout;
+using Prism;
 using Prism.Ioc;
 using System;
 using System.Collections.Generic;
@@ -22,6 +23,7 @@ namespace XamlInteg.UWP
         public MainPage()
         {
             this.InitializeComponent();
+            SfPopupLayoutRenderer.Init();
 
             LoadApplication(new XamlInteg.App(new UwpInitializer()));
         }
