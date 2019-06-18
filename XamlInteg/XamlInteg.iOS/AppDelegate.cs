@@ -1,3 +1,7 @@
+using Syncfusion.XForms.iOS.MaskedEdit;
+using Syncfusion.XForms.iOS.TextInputLayout;
+using Syncfusion.XForms.iOS.ComboBox;
+using Syncfusion.SfCalendar.XForms.iOS;
 using Syncfusion.XForms.iOS.Buttons;
 using Syncfusion.XForms.iOS.PopupLayout;
 using Foundation;
@@ -5,17 +9,16 @@ using Prism;
 using Prism.Ioc;
 using UIKit;
 
-
 namespace XamlInteg.iOS
 {
-    // The UIApplicationDelegate for the application. This class is responsible for launching the 
-    // User Interface of the application, as well as listening (and optionally responding) to 
+    // The UIApplicationDelegate for the application. This class is responsible for launching the
+    // User Interface of the application, as well as listening (and optionally responding) to
     // application events from iOS.
     [Register("AppDelegate")]
     public partial class AppDelegate : global::Xamarin.Forms.Platform.iOS.FormsApplicationDelegate
     {
         //
-        // This method is invoked when the application has loaded and is ready to run. In this 
+        // This method is invoked when the application has loaded and is ready to run. In this
         // method you should instantiate the window, load the UI into it and then make the window
         // visible.
         //
@@ -23,8 +26,13 @@ namespace XamlInteg.iOS
         //
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
-global::Xamarin.Forms.Forms.Init();
-SfCheckBoxRenderer.Init();
+            global::Xamarin.Forms.Forms.Init();
+            SfMaskedEditRenderer.Init();
+            SfButtonRenderer.Init();
+            SfTextInputLayoutRenderer.Init();
+            SfComboBoxRenderer.Init();
+            SfCalendarRenderer.Init();
+            SfCheckBoxRenderer.Init();
 
             SfPopupLayoutRenderer.Init();
             LoadApplication(new App(new iOSInitializer()));

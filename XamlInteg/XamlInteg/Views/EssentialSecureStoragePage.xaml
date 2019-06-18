@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="XamlInteg.Views.EssentialSecureStoragePage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:button="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+    xmlns:inputLayout="clr-namespace:Syncfusion.XForms.TextInputLayout;assembly=Syncfusion.Core.XForms"
+    xmlns:maskededit="clr-namespace:Syncfusion.XForms.MaskedEdit;assembly=Syncfusion.SfMaskedEdit.XForms"
+    xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+    prism:ViewModelLocator.AutowireViewModel="True">
+    <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+        <inputLayout:SfTextInputLayout HelperText="Enter your account" Hint="Account">
+            <Entry Text="{Binding Path=AccountInfo.Account}" />
+        </inputLayout:SfTextInputLayout>
+        <inputLayout:SfTextInputLayout HelperText="Enter your card number" Hint="Card Number">
+            <StackLayout>
+                <maskededit:SfMaskedEdit Mask="0000 0000 0000 0000" />
+            </StackLayout>
+        </inputLayout:SfTextInputLayout>
+        <inputLayout:SfTextInputLayout
+            EnablePasswordVisibilityToggle="True"
+            HelperText="Enter your password"
+            Hint="Password">
+            <Entry Text="{Binding Path=AccountInfo.Password, Mode=TwoWay}" />
+        </inputLayout:SfTextInputLayout>
+        <button:SfButton Command="{Binding SaveCommand}" Text="Save to Secure Storage" />
+    </StackLayout>
+</ContentPage>

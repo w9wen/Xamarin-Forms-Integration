@@ -1,3 +1,7 @@
+using Syncfusion.XForms.UWP.MaskedEdit;
+using Syncfusion.XForms.UWP.TextInputLayout;
+using Syncfusion.XForms.UWP.ComboBox;
+using Syncfusion.SfCalendar.XForms.UWP;
 using Syncfusion.XForms.UWP.Buttons;
 using Syncfusion.XForms.UWP.PopupLayout;
 using System.Reflection;
@@ -56,6 +60,11 @@ namespace XamlInteg.UWP
                 rootFrame.NavigationFailed += OnNavigationFailed;
 
 List<Assembly> assembliesToInclude = new List<Assembly>();
+assembliesToInclude.Add(typeof(SfMaskedEditRenderer).GetTypeInfo().Assembly);
+assembliesToInclude.Add(typeof(SfButtonRenderer).GetTypeInfo().Assembly);
+assembliesToInclude.Add(typeof(SfTextInputLayoutRenderer).GetTypeInfo().Assembly);
+assembliesToInclude.Add(typeof(SfComboBoxRenderer).GetTypeInfo().Assembly);
+assembliesToInclude.Add(typeof(SfCalendarRenderer).GetTypeInfo().Assembly);
 assembliesToInclude.Add(typeof(SfCheckBoxRenderer).GetTypeInfo().Assembly);
 assembliesToInclude.Add(typeof(SfPopupLayoutRenderer).GetTypeInfo().Assembly);
 Xamarin.Forms.Forms.Init(e, assembliesToInclude);
