@@ -21,5 +21,6 @@
             CommandParameter="AppInfo"
             Text="App Info" />
         <button:SfButton Command="{prismNavi:NavigateTo 'EssentialSecureStoragePage'}" Text="Secure Storage" />
+        <button:SfButton Command="{prismNavi:NavigateTo 'EssentialMainThreadPage'}" Text="Main Thread" />
     </StackLayout>
 </ContentPage>

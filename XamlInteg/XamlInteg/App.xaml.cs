@@ -50,6 +50,7 @@ namespace XamlInteg
             containerRegistry.RegisterForNavigation<FormsPage, FormsPageViewModel>();
             containerRegistry.RegisterForNavigation<SfPopupLayoutPage, SfPopupLayoutPageViewModel>();
             containerRegistry.RegisterForNavigation<EssentialSecureStoragePage, EssentialSecureStoragePageViewModel>();
+            containerRegistry.RegisterForNavigation<EssentialMainThreadPage, EssentialMainThreadPageViewModel>();
         }
     }
 }
