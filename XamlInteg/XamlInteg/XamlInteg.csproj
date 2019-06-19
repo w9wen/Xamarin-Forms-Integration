@@ -40,7 +40,7 @@
     <EmbeddedResource Update="Views\FormsPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\SfPopupLayoutPage.xaml">
+    <EmbeddedResource Update="Views\Syncfusion\SfPopupLayoutPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\Specifics\AndroidSpecificsPage.xaml">
@@ -67,10 +67,10 @@
     <EmbeddedResource Update="Views\StickyScrollPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\SyncfusionHomePage.xaml">
+    <EmbeddedResource Update="Views\Syncfusion\SyncfusionHomePage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\SyncListViewPage.xaml">
+    <EmbeddedResource Update="Views\Syncfusion\SyncListViewPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
