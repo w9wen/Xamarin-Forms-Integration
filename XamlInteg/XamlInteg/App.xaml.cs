@@ -51,6 +51,7 @@ namespace XamlInteg
             containerRegistry.RegisterForNavigation<SfPopupLayoutPage, SfPopupLayoutPageViewModel>();
             containerRegistry.RegisterForNavigation<EssentialSecureStoragePage, EssentialSecureStoragePageViewModel>();
             containerRegistry.RegisterForNavigation<EssentialMainThreadPage, EssentialMainThreadPageViewModel>();
+            containerRegistry.RegisterForNavigation<PrismLifecyclePage, PrismLifecyclePageViewModel>();
         }
     }
 }
