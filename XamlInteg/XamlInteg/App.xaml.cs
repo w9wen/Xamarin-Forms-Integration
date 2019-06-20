@@ -52,6 +52,7 @@ namespace XamlInteg
             containerRegistry.RegisterForNavigation<EssentialSecureStoragePage, EssentialSecureStoragePageViewModel>();
             containerRegistry.RegisterForNavigation<EssentialMainThreadPage, EssentialMainThreadPageViewModel>();
             containerRegistry.RegisterForNavigation<PrismLifecyclePage, PrismLifecyclePageViewModel>();
+            containerRegistry.RegisterForNavigation<EssentialFileSystemHelperPage, EssentialFileSystemHelperPageViewModel>();
         }
     }
 }

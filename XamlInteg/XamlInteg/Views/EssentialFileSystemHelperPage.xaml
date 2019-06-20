@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="XamlInteg.Views.EssentialFileSystemHelperPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:button="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+    xmlns:inputLayout="clr-namespace:Syncfusion.XForms.TextInputLayout;assembly=Syncfusion.Core.XForms"
+    xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+    prism:ViewModelLocator.AutowireViewModel="True">
+
+    <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+        <inputLayout:SfTextInputLayout Hint="Name">
+            <Entry />
+        </inputLayout:SfTextInputLayout>
+        <button:SfButton Command="{Binding SaveCommand}" Text="Save" />
+        <Label Text="{Binding AppPackageFileContent}" />
+        <button:SfButton Command="{Binding OpenAppPackageFileCommand}" Text="Open App Package File" />
+    </StackLayout>
+</ContentPage>
