@@ -53,6 +53,8 @@ namespace XamlInteg
             containerRegistry.RegisterForNavigation<EssentialMainThreadPage, EssentialMainThreadPageViewModel>();
             containerRegistry.RegisterForNavigation<PrismLifecyclePage, PrismLifecyclePageViewModel>();
             containerRegistry.RegisterForNavigation<EssentialFileSystemHelperPage, EssentialFileSystemHelperPageViewModel>();
+            containerRegistry.RegisterForNavigation<PluginsHomePage, PluginsHomePageViewModel>();
+            containerRegistry.RegisterForNavigation<FingerprintPage, FingerprintPageViewModel>();
         }
     }
 }

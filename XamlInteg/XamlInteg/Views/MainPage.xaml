@@ -1,15 +1,33 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="XamlInteg.Views.MainPage"
-             Title="{Binding Title}">
+<ContentPage
+    x:Class="XamlInteg.Views.MainPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:button="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+    xmlns:prismNavi="clr-namespace:Prism.Navigation.Xaml;assembly=Prism.Forms"
+    Title="{Binding Title}">
 
     <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
-        <Button Text="Prism" Command="{Binding ButtonCommand}" CommandParameter="prism"/>
-        <Button Text="Essentials" Command="{Binding ButtonCommand}" CommandParameter="essentials"/>
-        <Button Text="Android Specifics" Command="{Binding ButtonCommand}" CommandParameter="android"/>
-        <Button Text="Syncfusion" Command="{Binding ButtonCommand}" CommandParameter="Syncfusion"/>
-        <Button Text="Sticky using Scroll View" Command="{Binding ButtonCommand}" CommandParameter="StickyScroll"/>
+        <Button
+            Command="{Binding ButtonCommand}"
+            CommandParameter="prism"
+            Text="Prism" />
+        <Button
+            Command="{Binding ButtonCommand}"
+            CommandParameter="essentials"
+            Text="Essentials" />
+        <Button
+            Command="{Binding ButtonCommand}"
+            CommandParameter="android"
+            Text="Android Specifics" />
+        <Button
+            Command="{Binding ButtonCommand}"
+            CommandParameter="Syncfusion"
+            Text="Syncfusion" />
+        <button:SfButton Command="{prismNavi:NavigateTo 'PluginsHomePage'}" Text="PLUGIN" />
+        <Button
+            Command="{Binding ButtonCommand}"
+            CommandParameter="StickyScroll"
+            Text="Sticky using Scroll View" />
     </StackLayout>
-
 </ContentPage>
