@@ -20,8 +20,8 @@
     <PackageReference Include="Syncfusion.Xamarin.SfComboBox" Version="17.1.0.47" />
     <PackageReference Include="Syncfusion.Xamarin.SfMaskedEdit" Version="17.1.0.47" />
     <PackageReference Include="Syncfusion.Xamarin.SfPopupLayout" Version="17.1.0.47" />
-    <PackageReference Include="Xamarin.Essentials" Version="1.1.0" />
-    <PackageReference Include="Xamarin.Forms" Version="4.0.0.497661" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.2.0" />
+    <PackageReference Include="Xamarin.Forms" Version="4.1.0.555618" />
     <PackageReference Include="Prism.DryIoc.Forms" Version="7.1.0.431" />
   </ItemGroup>
 
