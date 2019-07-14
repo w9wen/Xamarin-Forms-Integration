@@ -1,8 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
-             prism:ViewModelLocator.AutowireViewModel="True"
-             x:Class="XamlInteg.Views.SyncfusionHomePage">
-    <Button Text="ListView" Command="{Binding ButtonCommand}" CommandParameter="ListView"/>
+<ContentPage
+    x:Class="XamlInteg.Views.SyncfusionHomePage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:button="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+    xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+    xmlns:prismNavi="clr-namespace:Prism.Navigation.Xaml;assembly=Prism.Forms"
+    prism:ViewModelLocator.AutowireViewModel="True">
+    <StackLayout>
+        <Button
+            Command="{Binding ButtonCommand}"
+            CommandParameter="ListView"
+            Text="ListView" />
+        <button:SfButton Command="{prismNavi:NavigateTo 'SfPopupLayoutPage'}" Text="PopupLayout" />
+        <button:SfButton Command="{prismNavi:NavigateTo 'SfTabViewPage'}" Text="TabView" />
+    </StackLayout>
 </ContentPage>

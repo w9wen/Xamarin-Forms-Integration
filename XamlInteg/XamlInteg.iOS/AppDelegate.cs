@@ -1,3 +1,4 @@
+using Syncfusion.XForms.iOS.TabView;
 using Syncfusion.XForms.iOS.MaskedEdit;
 using Syncfusion.XForms.iOS.TextInputLayout;
 using Syncfusion.XForms.iOS.ComboBox;
@@ -26,7 +27,8 @@ namespace XamlInteg.iOS
         //
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
-            global::Xamarin.Forms.Forms.Init();
+global::Xamarin.Forms.Forms.Init();
+SfTabViewRenderer.Init();
             SfMaskedEditRenderer.Init();
             SfButtonRenderer.Init();
             SfTextInputLayoutRenderer.Init();

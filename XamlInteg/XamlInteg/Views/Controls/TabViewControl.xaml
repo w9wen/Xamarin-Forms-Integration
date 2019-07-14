@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentView
+    x:Class="XamlInteg.Views.Controls.TabViewControl"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:tabview="clr-namespace:Syncfusion.XForms.TabView;assembly=Syncfusion.SfTabView.XForms"
+    mc:Ignorable="d">
+    <ContentView.Content>
+        <StackLayout>
+            <tabview:SfTabView>
+                <tabview:SfTabView.Items>
+                    <tabview:SfTabItem Title="Item1" />
+                    <tabview:SfTabItem Title="Item2" />
+                    <tabview:SfTabItem Title="Item3" />
+                </tabview:SfTabView.Items>
+            </tabview:SfTabView>
+        </StackLayout>
+    </ContentView.Content>
+</ContentView>

@@ -55,6 +55,7 @@ namespace XamlInteg
             containerRegistry.RegisterForNavigation<EssentialFileSystemHelperPage, EssentialFileSystemHelperPageViewModel>();
             containerRegistry.RegisterForNavigation<PluginsHomePage, PluginsHomePageViewModel>();
             containerRegistry.RegisterForNavigation<FingerprintPage, FingerprintPageViewModel>();
+            containerRegistry.RegisterForNavigation<SfTabViewPage, SfTabViewPageViewModel>(); containerRegistry.RegisterForNavigation<SfTabViewPage, SfTabViewPageViewModel>();
         }
     }
 }

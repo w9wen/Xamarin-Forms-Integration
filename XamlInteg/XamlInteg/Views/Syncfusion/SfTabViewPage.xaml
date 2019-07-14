@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="XamlInteg.Views.SfTabViewPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:controls="clr-namespace:XamlInteg.Views.Controls"
+    xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+    xmlns:tabview="clr-namespace:Syncfusion.XForms.TabView;assembly=Syncfusion.SfTabView.XForms"
+    prism:ViewModelLocator.AutowireViewModel="True">
+    <StackLayout>
+
+        <tabview:SfTabView>
+            <tabview:SfTabView.Items>
+                <tabview:SfTabItem Title="Item1" TitleFontSize="20">
+                    <tabview:SfTabItem.Content>
+                        <controls:TabViewControl />
+                    </tabview:SfTabItem.Content>
+                </tabview:SfTabItem>
+                <tabview:SfTabItem Title="Item2" TitleFontSize="20" />
+            </tabview:SfTabView.Items>
+        </tabview:SfTabView>
+    </StackLayout>
+</ContentPage>

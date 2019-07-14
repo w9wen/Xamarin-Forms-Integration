@@ -1,3 +1,4 @@
+using Syncfusion.XForms.UWP.TabView;
 using Syncfusion.XForms.UWP.MaskedEdit;
 using Syncfusion.XForms.UWP.TextInputLayout;
 using Syncfusion.XForms.UWP.ComboBox;
@@ -60,6 +61,7 @@ namespace XamlInteg.UWP
                 rootFrame.NavigationFailed += OnNavigationFailed;
 
 List<Assembly> assembliesToInclude = new List<Assembly>();
+assembliesToInclude.Add(typeof(SfTabViewRenderer).GetTypeInfo().Assembly);
 assembliesToInclude.Add(typeof(SfMaskedEditRenderer).GetTypeInfo().Assembly);
 assembliesToInclude.Add(typeof(SfButtonRenderer).GetTypeInfo().Assembly);
 assembliesToInclude.Add(typeof(SfTextInputLayoutRenderer).GetTypeInfo().Assembly);

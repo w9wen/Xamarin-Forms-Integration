@@ -2,9 +2,9 @@
 
 namespace XamlInteg.Views
 {
-    public partial class SfPopupLayoutPage : ContentPage
+    public partial class SfTabViewPage : ContentPage
     {
-        public SfPopupLayoutPage()
+        public SfTabViewPage()
         {
             InitializeComponent();
         }

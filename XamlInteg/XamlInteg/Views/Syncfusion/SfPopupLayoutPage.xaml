@@ -1,55 +1,50 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-xmlns:combobox="clr-namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms"
-xmlns:ListCollection="clr-namespace:System.Collections.Generic;assembly=mscorlib"
-xmlns:calendar="clr-namespace:Syncfusion.SfCalendar.XForms;assembly=Syncfusion.SfCalendar.XForms"
-             xmlns:checkbox="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
-             xmlns:popuplayout="clr-namespace:Syncfusion.XForms.PopupLayout;assembly=Syncfusion.SfPopupLayout.XForms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
-             prism:ViewModelLocator.AutowireViewModel="True"
-             x:Class="XamlInteg.Views.SfPopupLayoutPage"
-             Padding="0, 50, 0 ,0">
+<ContentPage
+    x:Class="XamlInteg.Views.SfPopupLayoutPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:button="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+    xmlns:calendar="clr-namespace:Syncfusion.SfCalendar.XForms;assembly=Syncfusion.SfCalendar.XForms"
+    xmlns:combobox="clr-namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms"
+    xmlns:popuplayout="clr-namespace:Syncfusion.XForms.PopupLayout;assembly=Syncfusion.SfPopupLayout.XForms"
+    xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+    xmlns:rainbows="clr-namespace:Xamarin.Forms.DebugRainbows;assembly=Xamarin.Forms.DebugRainbows"
+    prism:ViewModelLocator.AutowireViewModel="True"
+    rainbows:DebugRainbow.IsDebug="False">
 
-    <popuplayout:SfPopupLayout x:Name="PopupLayout_Test" BackgroundColor="Green">
+    <StackLayout>
 
-        <popuplayout:SfPopupLayout.Content>
-            <StackLayout BackgroundColor="Yellow">
-                <checkbox:SfCheckBox x:Name="CheckBox_ShowPopup" Text="Show Syncfution PopupLayout" BackgroundColor="Blue" TextColor="White"
-                                     StateChanged="CheckBox_ShowPopup_StateChanged"/>
-            </StackLayout>
-        </popuplayout:SfPopupLayout.Content>
+        <popuplayout:SfPopupLayout x:Name="PopupLayout_Search">
+            <popuplayout:SfPopupLayout.PopupView>
+                <popuplayout:PopupView
+                    AcceptButtonText="Accept"
+                    AppearanceMode="TwoButton"
+                    DeclineButtonText="CANCEL"
+                    HeaderTitle="Xamarin Integration"
+                    ShowHeader="True">
+                    <popuplayout:PopupView.ContentTemplate>
+                        <DataTemplate>
+                            <Grid>
+                                <Label
+                                    BackgroundColor="White"
+                                    FontSize="16"
+                                    Text="Discard draft?"
+                                    TextColor="Gray" />
+                                <Label
+                                    BackgroundColor="Aqua"
+                                    FontSize="18"
+                                    Text="Try the second control"
+                                    TextColor="Blue" />
+                            </Grid>
+                        </DataTemplate>
+                    </popuplayout:PopupView.ContentTemplate>
+                </popuplayout:PopupView>
+            </popuplayout:SfPopupLayout.PopupView>
+        </popuplayout:SfPopupLayout>
 
-        <popuplayout:SfPopupLayout.PopupView>
-            <popuplayout:PopupView ShowHeader="False"
-                                           AcceptButtonText="DISCARD" 
-                                           DeclineButtonText="CANCEL"
-                                           AppearanceMode="TwoButton"
-                                           HeightRequest="360"
-                                           BackgroundColor="Pink">
-                <popuplayout:PopupView.ContentTemplate>
-                    <DataTemplate>
-                        <AbsoluteLayout BackgroundColor="White" Padding="15,20,0,0">
-                            <Label AbsoluteLayout.LayoutBounds="0.5, 0, 0.5, 0.5" AbsoluteLayout.LayoutFlags="All"
-                                FontSize="16"  BackgroundColor="White" TextColor="Gray" Text="Discard draft?"/>
-                            <Label AbsoluteLayout.LayoutBounds="0.5, 0.2, 0.5, 0.5" AbsoluteLayout.LayoutFlags="All"
-                                   FontSize="18" BackgroundColor="Aqua" TextColor="Blue" Text="Try the second control"/>
-                            <Button AbsoluteLayout.LayoutBounds="0.5, 0.4, 0.5, 0.5" AbsoluteLayout.LayoutFlags="All"
-                                x:Name="Button_Test" TextColor="Black"/>
-                            <!--<StackLayout AbsoluteLayout.LayoutBounds="0.5, 0.7, 0.5, 0.5" AbsoluteLayout.LayoutFlags="All">
-                                <combobox:SfComboBox x:Name="comboBox">
-                                    <combobox:SfComboBox.ItemsSource>
-                                    </combobox:SfComboBox.ItemsSource>
-                                </combobox:SfComboBox>
-                            </StackLayout>-->
-                        </AbsoluteLayout>
-                    </DataTemplate>
-                </popuplayout:PopupView.ContentTemplate>
-
-            </popuplayout:PopupView>
-        </popuplayout:SfPopupLayout.PopupView>
-
-    </popuplayout:SfPopupLayout>
-
-
+        <button:SfButton
+            Command="{Binding ShowPopupCommand}"
+            CommandParameter="{x:Reference PopupLayout_Search}"
+            Text="Show PopupLayout" />
+    </StackLayout>
 </ContentPage>
