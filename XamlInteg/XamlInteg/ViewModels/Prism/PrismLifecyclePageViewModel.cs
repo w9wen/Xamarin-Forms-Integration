@@ -30,7 +30,10 @@ namespace XamlInteg.ViewModels
         /// <param name="parameters"></param>
         public override void OnNavigatedTo(INavigationParameters parameters)
         {
-            base.OnNavigatedTo(parameters);
+            if (parameters.TryGetValue(KnownNavigationParameters.XamlParam, out object fooObject))
+            {
+                // do something with fooObject
+            }
         }
 
         /// <summary>

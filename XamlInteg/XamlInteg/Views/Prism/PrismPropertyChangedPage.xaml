@@ -1,12 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
-             prism:ViewModelLocator.AutowireViewModel="True"
-             x:Class="XamlInteg.Views.PrismPropertyChangedPage">
+<ContentPage
+    x:Class="XamlInteg.Views.PrismPropertyChangedPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+    prism:ViewModelLocator.AutowireViewModel="True">
     <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
-        <Switch IsToggled="{Binding IsSelected}" Margin="10"/>
-        <Button Text="Fired the property changed" Command="{Binding ButtonCommand}" Margin="10"/>
-        <Label Text="{Binding UpdateText}" Margin="10" FontSize="16"/>
+        <Switch Margin="10" IsToggled="{Binding IsSelected}" />
+        <Button
+            Margin="10"
+            Command="{Binding ButtonCommand}"
+            Text="Fired the property changed" />
+        <Label
+            Margin="10"
+            FontSize="16"
+            Text="{Binding UpdateText}" />
     </StackLayout>
 </ContentPage>

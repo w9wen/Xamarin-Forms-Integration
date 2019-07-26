@@ -8,6 +8,7 @@
     Title="{Binding Title}">
 
     <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+        <button:SfButton Command="{prismNavi:NavigateTo 'ControlsHomePage'}" Text="Xamarin.Forms Controls" />
         <Button
             Command="{Binding ButtonCommand}"
             CommandParameter="prism"

@@ -57,6 +57,8 @@ namespace XamlInteg
             containerRegistry.RegisterForNavigation<PluginsHomePage, PluginsHomePageViewModel>();
             containerRegistry.RegisterForNavigation<FingerprintPage, FingerprintPageViewModel>();
             containerRegistry.RegisterForNavigation<SfTabViewPage, SfTabViewPageViewModel>(); containerRegistry.RegisterForNavigation<SfTabViewPage, SfTabViewPageViewModel>();
+            containerRegistry.RegisterForNavigation<ControlsHomePage, ControlsHomePageViewModel>();
+            containerRegistry.RegisterForNavigation<WebViewPage, WebViewPageViewModel>();
         }
     }
 }
