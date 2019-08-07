@@ -14,5 +14,6 @@
             Text="ListView" />
         <button:SfButton Command="{prismNavi:NavigateTo 'SfPopupLayoutPage'}" Text="PopupLayout" />
         <button:SfButton Command="{prismNavi:NavigateTo 'SfTabViewPage'}" Text="TabView" />
+        <button:SfButton Command="{prismNavi:NavigateTo 'SfParallaxViewPage'}" Text="ParallaxView" />
     </StackLayout>
 </ContentPage>

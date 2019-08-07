@@ -128,6 +128,27 @@ namespace XamlInteg.Droid
 			global::Syncfusion.XForms.Android.ComboBox.Resource.Styleable.RecyclerView_reverseLayout = global::XamlInteg.Droid.Resource.Styleable.RecyclerView_reverseLayout;
 			global::Syncfusion.XForms.Android.ComboBox.Resource.Styleable.RecyclerView_spanCount = global::XamlInteg.Droid.Resource.Styleable.RecyclerView_spanCount;
 			global::Syncfusion.XForms.Android.ComboBox.Resource.Styleable.RecyclerView_stackFromEnd = global::XamlInteg.Droid.Resource.Styleable.RecyclerView_stackFromEnd;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.layoutManager = global::XamlInteg.Droid.Resource.Attribute.layoutManager;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.reverseLayout = global::XamlInteg.Droid.Resource.Attribute.reverseLayout;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.spanCount = global::XamlInteg.Droid.Resource.Attribute.spanCount;
+			global::Syncfusion.ListView.XForms.Android.Resource.Attribute.stackFromEnd = global::XamlInteg.Droid.Resource.Attribute.stackFromEnd;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.item_touch_helper_max_drag_scroll_per_frame = global::XamlInteg.Droid.Resource.Dimension.item_touch_helper_max_drag_scroll_per_frame;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.item_touch_helper_swipe_escape_max_velocity = global::XamlInteg.Droid.Resource.Dimension.item_touch_helper_swipe_escape_max_velocity;
+			global::Syncfusion.ListView.XForms.Android.Resource.Dimension.item_touch_helper_swipe_escape_velocity = global::XamlInteg.Droid.Resource.Dimension.item_touch_helper_swipe_escape_velocity;
+			global::Syncfusion.ListView.XForms.Android.Resource.Drawable.input_layout_drop_down_icon = global::XamlInteg.Droid.Resource.Drawable.input_layout_drop_down_icon;
+			global::Syncfusion.ListView.XForms.Android.Resource.Drawable.inputlayout_togglecollapseicon = global::XamlInteg.Droid.Resource.Drawable.inputlayout_togglecollapseicon;
+			global::Syncfusion.ListView.XForms.Android.Resource.Drawable.inputlayout_togglevisibleicon = global::XamlInteg.Droid.Resource.Drawable.inputlayout_togglevisibleicon;
+			global::Syncfusion.ListView.XForms.Android.Resource.Id.item_touch_helper_previous_elevation = global::XamlInteg.Droid.Resource.Id.item_touch_helper_previous_elevation;
+			global::Syncfusion.ListView.XForms.Android.Resource.String.ApplicationName = global::XamlInteg.Droid.Resource.String.ApplicationName;
+			global::Syncfusion.ListView.XForms.Android.Resource.String.Hello = global::XamlInteg.Droid.Resource.String.Hello;
+			global::Syncfusion.ListView.XForms.Android.Resource.String.Load_More = global::XamlInteg.Droid.Resource.String.Load_More;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.RecyclerView = global::XamlInteg.Droid.Resource.Styleable.RecyclerView;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.RecyclerView_android_descendantFocusability = global::XamlInteg.Droid.Resource.Styleable.RecyclerView_android_descendantFocusability;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.RecyclerView_android_orientation = global::XamlInteg.Droid.Resource.Styleable.RecyclerView_android_orientation;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.RecyclerView_layoutManager = global::XamlInteg.Droid.Resource.Styleable.RecyclerView_layoutManager;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.RecyclerView_reverseLayout = global::XamlInteg.Droid.Resource.Styleable.RecyclerView_reverseLayout;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.RecyclerView_spanCount = global::XamlInteg.Droid.Resource.Styleable.RecyclerView_spanCount;
+			global::Syncfusion.ListView.XForms.Android.Resource.Styleable.RecyclerView_stackFromEnd = global::XamlInteg.Droid.Resource.Styleable.RecyclerView_stackFromEnd;
 			global::Syncfusion.XForms.Android.PopupLayout.Resource.Drawable.input_layout_drop_down_icon = global::XamlInteg.Droid.Resource.Drawable.input_layout_drop_down_icon;
 			global::Syncfusion.XForms.Android.PopupLayout.Resource.Drawable.inputlayout_togglecollapseicon = global::XamlInteg.Droid.Resource.Drawable.inputlayout_togglecollapseicon;
 			global::Syncfusion.XForms.Android.PopupLayout.Resource.Drawable.inputlayout_togglevisibleicon = global::XamlInteg.Droid.Resource.Drawable.inputlayout_togglevisibleicon;
@@ -7999,6 +8020,15 @@ namespace XamlInteg.Droid
 		public partial class String
 		{
 			
+			// aapt resource value: 0x7f0b0054
+			public const int ApplicationName = 2131427412;
+			
+			// aapt resource value: 0x7f0b0053
+			public const int Hello = 2131427411;
+			
+			// aapt resource value: 0x7f0b0055
+			public const int Load_More = 2131427413;
+			
 			// aapt resource value: 0x7f0b0018
 			public const int abc_action_bar_home_description = 2131427352;
 			
@@ -8242,11 +8272,11 @@ namespace XamlInteg.Droid
 			// aapt resource value: 0x7f0b0033
 			public const int search_menu_title = 2131427379;
 			
-			// aapt resource value: 0x7f0b0054
-			public const int sfcalendar_inlineviewalldaytext = 2131427412;
+			// aapt resource value: 0x7f0b0057
+			public const int sfcalendar_inlineviewalldaytext = 2131427415;
 			
-			// aapt resource value: 0x7f0b0053
-			public const int sfcalendar_inlineviewnoappointmenttext = 2131427411;
+			// aapt resource value: 0x7f0b0056
+			public const int sfcalendar_inlineviewnoappointmenttext = 2131427414;
 			
 			// aapt resource value: 0x7f0b004d
 			public const int status_bar_notification_info_overflow = 2131427405;

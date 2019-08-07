@@ -1,3 +1,5 @@
+using Syncfusion.XForms.UWP.ParallaxView;
+using Syncfusion.ListView.XForms.UWP;
 using Syncfusion.XForms.UWP.TabView;
 using Syncfusion.XForms.UWP.MaskedEdit;
 using Syncfusion.XForms.UWP.TextInputLayout;
@@ -61,6 +63,8 @@ namespace XamlInteg.UWP
                 rootFrame.NavigationFailed += OnNavigationFailed;
 
 List<Assembly> assembliesToInclude = new List<Assembly>();
+assembliesToInclude.Add(typeof(SfParallaxViewRenderer).GetTypeInfo().Assembly);
+assembliesToInclude.Add(typeof(SfListViewRenderer).GetTypeInfo().Assembly);
 assembliesToInclude.Add(typeof(SfTabViewRenderer).GetTypeInfo().Assembly);
 assembliesToInclude.Add(typeof(SfMaskedEditRenderer).GetTypeInfo().Assembly);
 assembliesToInclude.Add(typeof(SfButtonRenderer).GetTypeInfo().Assembly);

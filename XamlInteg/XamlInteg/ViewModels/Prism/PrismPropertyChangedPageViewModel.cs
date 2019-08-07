@@ -1,12 +1,13 @@
 ﻿using Prism.Commands;
 using Prism.Mvvm;
+using Prism.Navigation;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
 namespace XamlInteg.ViewModels
 {
-    public class PrismPropertyChangedPageViewModel : BindableBase
+    public class PrismPropertyChangedPageViewModel : ViewModelBase
     {
         private bool _isSelected;
         private string _updateText;
@@ -24,7 +25,9 @@ namespace XamlInteg.ViewModels
         }
 
         public DelegateCommand ButtonCommand { get; private set; }
-        public PrismPropertyChangedPageViewModel()
+
+        public PrismPropertyChangedPageViewModel(INavigationService navigationService)
+            : base(navigationService)
         {
             ButtonCommand = new DelegateCommand(ButtonExecute, ButtonCanExecute);
         }
@@ -37,6 +40,21 @@ namespace XamlInteg.ViewModels
         private bool ButtonCanExecute()
         {
             return IsSelected;
+        }
+
+        public override void OnNavigatedTo(INavigationParameters parameters)
+        {
+            base.OnNavigatedTo(parameters);
+        }
+
+        public override void OnNavigatingTo(INavigationParameters parameters)
+        {
+            base.OnNavigatingTo(parameters);
+        }
+
+        public override void OnNavigatedFrom(INavigationParameters parameters)
+        {
+            base.OnNavigatedFrom(parameters);
         }
     }
 }

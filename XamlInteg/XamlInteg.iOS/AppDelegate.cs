@@ -1,3 +1,5 @@
+using Syncfusion.XForms.iOS.ParallaxView;
+using Syncfusion.ListView.XForms.iOS;
 using Syncfusion.XForms.iOS.TabView;
 using Syncfusion.XForms.iOS.MaskedEdit;
 using Syncfusion.XForms.iOS.TextInputLayout;
@@ -28,6 +30,8 @@ namespace XamlInteg.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
 global::Xamarin.Forms.Forms.Init();
+SfParallaxViewRenderer.Init();
+SfListViewRenderer.Init();
 SfTabViewRenderer.Init();
             SfMaskedEditRenderer.Init();
             SfButtonRenderer.Init();

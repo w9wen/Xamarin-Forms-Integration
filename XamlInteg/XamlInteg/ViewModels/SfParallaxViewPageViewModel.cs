@@ -8,13 +8,13 @@ using XamlInteg.Models;
 
 namespace XamlInteg.ViewModels
 {
-    public class SyncListViewPageViewModel : BindableBase
+    public class SfParallaxViewPageViewModel : BindableBase
     {
         private ObservableCollection<Monkey> monkeys;
 
         public ObservableCollection<Monkey> Monkeys { get => monkeys; set => monkeys = value; }
 
-        public SyncListViewPageViewModel()
+        public SfParallaxViewPageViewModel()
         {
             Monkeys = new ObservableCollection<Monkey>();
             CreateMonkeyCollection();

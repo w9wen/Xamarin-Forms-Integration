@@ -11,6 +11,7 @@ namespace XamlInteg.ViewModels
     public class PrismHomePageViewModel : ViewModelBase
     {
         public DelegateCommand<string> ButtonCommand { get; private set; }
+
         public PrismHomePageViewModel(INavigationService navigationService)
             : base(navigationService)
         {
@@ -23,8 +24,12 @@ namespace XamlInteg.ViewModels
             switch (subject)
             {
                 case "property_changed":
-                    NavigationService.NavigateAsync(nameof(PrismPropertyChangedPage));
+                    var parameters = new NavigationParameters();
+                    parameters.Add("testKey", "testValue");
+
+                    NavigationService.NavigateAsync(nameof(PrismPropertyChangedPage), parameters);
                     break;
+
                 default:
                     break;
             }

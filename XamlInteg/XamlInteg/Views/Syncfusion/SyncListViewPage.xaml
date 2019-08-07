@@ -1,9 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
-             prism:ViewModelLocator.AutowireViewModel="True"
-             x:Class="XamlInteg.Views.SyncListViewPage"
-             Title="Syncfusion ListView">
-    
+<ContentPage
+    x:Class="XamlInteg.Views.SyncListViewPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:listview="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
+    xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+    Title="Syncfusion ListView"
+    prism:ViewModelLocator.AutowireViewModel="True">
+    <listview:SfListView ItemsSource="{Binding Monkeys}">
+        <listview:SfListView.ItemTemplate>
+            <DataTemplate>
+                <Label Text="{Binding Name}" />
+            </DataTemplate>
+        </listview:SfListView.ItemTemplate>
+    </listview:SfListView>
 </ContentPage>

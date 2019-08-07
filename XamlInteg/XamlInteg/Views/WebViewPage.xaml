@@ -6,5 +6,21 @@
     xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
     prism:ViewModelLocator.AutowireViewModel="True">
 
-    <WebView Source="https://help.syncfusion.com/xamarin/introduction/overview" />
+    <StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Button
+                Clicked="Button_Clicked"
+                HorizontalOptions="StartAndExpand"
+                Text="Back" />
+            <Button
+                Clicked="Button_Clicked"
+                HorizontalOptions="CenterAndExpand"
+                Text="Reload" />
+            <Button
+                Clicked="Button_Clicked"
+                HorizontalOptions="EndAndExpand"
+                Text="Forward" />
+        </StackLayout>
+        <WebView x:Name="WebView_Control" />
+    </StackLayout>
 </ContentPage>

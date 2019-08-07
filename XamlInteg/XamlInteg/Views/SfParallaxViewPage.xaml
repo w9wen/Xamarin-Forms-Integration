@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="XamlInteg.Views.SfParallaxViewPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:listview="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
+    xmlns:parallaxView="clr-namespace:Syncfusion.XForms.ParallaxView;assembly=Syncfusion.SfParallaxView.XForms"
+    xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+    prism:ViewModelLocator.AutowireViewModel="True">
+    <ContentPage.Content>
+        <Grid>
+            <parallaxView:SfParallaxView x:Name="parallaxview" Source="{x:Reference Name=listview}">
+                <parallaxView:SfParallaxView.Content>
+                    <Image
+                        Aspect="AspectFill"
+                        BackgroundColor="Transparent"
+                        HorizontalOptions="Fill"
+                        Source="http://lorempixel.com/1920/1080/nature/7"
+                        VerticalOptions="Fill" />
+                </parallaxView:SfParallaxView.Content>
+            </parallaxView:SfParallaxView>
+
+            <!--<ScrollView x:Name="scrollView" Grid.Row="0">
+                <StackLayout HeightRequest="1000" WidthRequest="1000" />
+            </ScrollView>-->
+            <listview:SfListView
+                x:Name="listview"
+                BackgroundColor="Transparent"
+                ItemSize="100"
+                ItemsSource="{Binding Monkeys}">
+                <listview:SfListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid Padding="20,0,20,0" RowSpacing="50">
+                                <StackLayout
+                                    Grid.Column="1"
+                                    Padding="0,0,0,0"
+                                    BackgroundColor="Transparent"
+                                    HorizontalOptions="StartAndExpand"
+                                    Orientation="Vertical"
+                                    VerticalOptions="CenterAndExpand">
+                                    <Label
+                                        Font="25"
+                                        HorizontalOptions="Start"
+                                        Text="{Binding Name}"
+                                        TextColor="White" />
+                                    <Label
+                                        HorizontalOptions="Start"
+                                        Text="{Binding Location}"
+                                        TextColor="White" />
+                                </StackLayout>
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </listview:SfListView.ItemTemplate>
+            </listview:SfListView>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

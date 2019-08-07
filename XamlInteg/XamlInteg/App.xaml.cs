@@ -59,6 +59,7 @@ namespace XamlInteg
             containerRegistry.RegisterForNavigation<SfTabViewPage, SfTabViewPageViewModel>(); containerRegistry.RegisterForNavigation<SfTabViewPage, SfTabViewPageViewModel>();
             containerRegistry.RegisterForNavigation<ControlsHomePage, ControlsHomePageViewModel>();
             containerRegistry.RegisterForNavigation<WebViewPage, WebViewPageViewModel>();
+            containerRegistry.RegisterForNavigation<SfParallaxViewPage, SfParallaxViewPageViewModel>();
         }
     }
 }

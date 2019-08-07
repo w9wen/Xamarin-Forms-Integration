@@ -1,4 +1,5 @@
-﻿using Xamarin.Forms;
+﻿using System;
+using Xamarin.Forms;
 
 namespace XamlInteg.Views
 {
@@ -7,6 +8,10 @@ namespace XamlInteg.Views
         public WebViewPage()
         {
             InitializeComponent();
+        }
+
+        private void Button_Clicked(object sender, EventArgs e)
+        {
         }
     }
 }
