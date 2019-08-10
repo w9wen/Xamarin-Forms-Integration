@@ -30,5 +30,7 @@
             Command="{Binding ButtonCommand}"
             CommandParameter="StickyScroll"
             Text="Sticky using Scroll View" />
+
+        <button:SfButton Command="{prismNavi:NavigateTo 'CustomControlsHomePage'}" Text="Custom Controls" />
     </StackLayout>
 </ContentPage>

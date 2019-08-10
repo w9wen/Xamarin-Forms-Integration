@@ -21,6 +21,7 @@
     <PackageReference Include="Syncfusion.Xamarin.GridCommon" Version="17.2.0.40" />
     <PackageReference Include="Syncfusion.Xamarin.SfCalendar" Version="17.2.0.40" />
     <PackageReference Include="Syncfusion.Xamarin.SfComboBox" Version="17.2.0.40" />
+    <PackageReference Include="Syncfusion.Xamarin.SfDataGrid" Version="17.2.0.40" />
     <PackageReference Include="Syncfusion.Xamarin.SfListView" Version="17.2.0.40" />
     <PackageReference Include="Syncfusion.Xamarin.SfMaskedEdit" Version="17.2.0.40" />
     <PackageReference Include="Syncfusion.Xamarin.SfParallaxView" Version="17.2.0.40" />
@@ -48,6 +49,9 @@
     <EmbeddedResource Update="Views\Controls\TabViewControl.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Update="Views\CustomControls\CustomControlsHomePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="Views\EssentialFileSystemHelperPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
@@ -61,6 +65,9 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\FormsPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\CustomControls\ParallaxControlPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\PluginsHomePage.xaml">

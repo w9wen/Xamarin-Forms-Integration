@@ -1,3 +1,4 @@
+using Syncfusion.SfDataGrid.XForms.UWP;
 using Syncfusion.ListView.XForms.UWP;
 using Syncfusion.XForms.UWP.PopupLayout;
 using Prism;
@@ -24,6 +25,7 @@ namespace XamlInteg.UWP
         public MainPage()
         {
 this.InitializeComponent();
+SfDataGridRenderer.Init();
 SfListViewRenderer.Init();
             SfPopupLayoutRenderer.Init();
 

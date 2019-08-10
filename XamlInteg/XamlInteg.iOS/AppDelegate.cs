@@ -1,3 +1,4 @@
+using Syncfusion.SfDataGrid.XForms.iOS;
 using Syncfusion.XForms.iOS.ParallaxView;
 using Syncfusion.ListView.XForms.iOS;
 using Syncfusion.XForms.iOS.TabView;
@@ -30,6 +31,7 @@ namespace XamlInteg.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
 global::Xamarin.Forms.Forms.Init();
+SfDataGridRenderer.Init();
 SfParallaxViewRenderer.Init();
 SfListViewRenderer.Init();
 SfTabViewRenderer.Init();
