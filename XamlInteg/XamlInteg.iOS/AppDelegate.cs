@@ -1,3 +1,4 @@
+using Syncfusion.XForms.iOS.BadgeView;
 using Syncfusion.SfDataGrid.XForms.iOS;
 using Syncfusion.XForms.iOS.ParallaxView;
 using Syncfusion.ListView.XForms.iOS;
@@ -31,6 +32,7 @@ namespace XamlInteg.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
 global::Xamarin.Forms.Forms.Init();
+SfBadgeViewRenderer.Init();
 SfDataGridRenderer.Init();
 SfParallaxViewRenderer.Init();
 SfListViewRenderer.Init();

@@ -19,6 +19,7 @@
     <PackageReference Include="Syncfusion.Xamarin.Core" Version="17.2.0.40" />
     <PackageReference Include="Syncfusion.Xamarin.DataSource" Version="17.2.0.40" />
     <PackageReference Include="Syncfusion.Xamarin.GridCommon" Version="17.2.0.40" />
+    <PackageReference Include="Syncfusion.Xamarin.SfBadgeView" Version="17.2.0.40" />
     <PackageReference Include="Syncfusion.Xamarin.SfCalendar" Version="17.2.0.40" />
     <PackageReference Include="Syncfusion.Xamarin.SfComboBox" Version="17.2.0.40" />
     <PackageReference Include="Syncfusion.Xamarin.SfDataGrid" Version="17.2.0.40" />
@@ -74,6 +75,9 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\Prism\PrismLifecyclePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\SfBadgeViewPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\SfParallaxViewPage.xaml">

@@ -210,6 +210,9 @@
     <PackageReference Include="Syncfusion.Xamarin.GridCommon">
       <Version>17.2.0.40</Version>
     </PackageReference>
+    <PackageReference Include="Syncfusion.Xamarin.SfBadgeView">
+      <Version>17.2.0.40</Version>
+    </PackageReference>
     <PackageReference Include="Syncfusion.Xamarin.SfCalendar">
       <Version>17.2.0.40</Version>
     </PackageReference>

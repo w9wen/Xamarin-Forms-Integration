@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="XamlInteg.Views.SfBadgeViewPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:badge="clr-namespace:Syncfusion.XForms.BadgeView;assembly=Syncfusion.SfBadgeView.XForms"
+    xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+    xmlns:xaml="clr-namespace:Xamarin.Forms.DebugRainbows;assembly=Xamarin.Forms.DebugRainbows"
+    prism:ViewModelLocator.AutowireViewModel="True"
+    xaml:DebugRainbow.IsDebug="True">
+
+    <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+        <badge:SfBadgeView
+            BackgroundColor="Azure"
+            BadgeText="33"
+            HeightRequest="100"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            WidthRequest="100">
+            <badge:SfBadgeView.Content>
+                <Label
+                    HeightRequest="80"
+                    Text="test"
+                    WidthRequest="100" />
+            </badge:SfBadgeView.Content>
+            <badge:SfBadgeView.BadgeSettings>
+                <badge:BadgeSetting BadgeType="Primary" StrokeWidth="3" />
+            </badge:SfBadgeView.BadgeSettings>
+        </badge:SfBadgeView>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*" />
+            </Grid.RowDefinitions>
+            <Label
+                Grid.Row="0"
+                HeightRequest="100"
+                HorizontalOptions="Center"
+                Text="Grid"
+                VerticalOptions="Center"
+                VerticalTextAlignment="Center"
+                WidthRequest="100" />
+            <badge:SfBadgeView
+                BadgeText="33"
+                HeightRequest="30"
+                HorizontalOptions="End"
+                WidthRequest="30">
+                <badge:SfBadgeView.BadgeSettings>
+                    <badge:BadgeSetting />
+                </badge:SfBadgeView.BadgeSettings>
+            </badge:SfBadgeView>
+        </Grid>
+    </StackLayout>
+</ContentPage>
