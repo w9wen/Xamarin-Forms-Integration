@@ -6,13 +6,14 @@
     xmlns:badge="clr-namespace:Syncfusion.XForms.BadgeView;assembly=Syncfusion.SfBadgeView.XForms"
     xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
     xmlns:xaml="clr-namespace:Xamarin.Forms.DebugRainbows;assembly=Xamarin.Forms.DebugRainbows"
+    Title="Badge View"
     prism:ViewModelLocator.AutowireViewModel="True"
     xaml:DebugRainbow.IsDebug="True">
 
     <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
         <badge:SfBadgeView
             BackgroundColor="Azure"
-            BadgeText="33"
+            BadgeText="102"
             HeightRequest="100"
             HorizontalOptions="Center"
             VerticalOptions="Center"
@@ -41,7 +42,7 @@
                 VerticalTextAlignment="Center"
                 WidthRequest="100" />
             <badge:SfBadgeView
-                BadgeText="33"
+                BadgeText="43"
                 HeightRequest="30"
                 HorizontalOptions="End"
                 WidthRequest="30">
