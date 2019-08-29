@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="XamlInteg.Views.PrismEventToCommandBehaviorPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:button="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+    xmlns:listview="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
+    xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+    xmlns:prismBehaviors="clr-namespace:Prism.Behaviors;assembly=Prism.Forms"
+    Title="EventToCommandBehavior"
+    prism:ViewModelLocator.AutowireViewModel="True">
+
+    <ScrollView>
+        <StackLayout>
+            <Label Text="This is Header" />
+            <button:SfButton Command="{Binding UpdateDataCommand}" Text="Update data" />
+            <listview:SfListView
+                x:Name="ListView_Monkeys"
+                AutoFitMode="DynamicHeight"
+                BindingContextChanged="SfListView_BindingContextChanged"
+                ChildAdded="SfListView_ChildAdded"
+                ChildRemoved="SfListView_ChildRemoved"
+                ChildrenReordered="SfListView_ChildrenReordered"
+                DescendantAdded="SfListView_DescendantAdded"
+                Focused="SfListView_Focused"
+                GroupCollapsed="SfListView_GroupCollapsed"
+                GroupCollapsing="SfListView_GroupCollapsing"
+                GroupExpanded="SfListView_GroupExpanded"
+                GroupExpanding="SfListView_GroupExpanding"
+                IsStickyFooter="False"
+                ItemAppearing="SfListView_ItemAppearing"
+                ItemDisappearing="SfListView_ItemDisappearing"
+                ItemDoubleTapped="SfListView_ItemDoubleTapped"
+                ItemDragging="SfListView_ItemDragging"
+                ItemHolding="SfListView_ItemHolding"
+                ItemTapped="SfListView_ItemTapped"
+                ItemsSource="{Binding Monkeys}"
+                LayoutChanged="SfListView_LayoutChanged"
+                Loaded="SfListView_Loaded"
+                MeasureInvalidated="SfListView_MeasureInvalidated"
+                PropertyChanged="SfListView_PropertyChanged"
+                PropertyChanging="SfListView_PropertyChanging"
+                QueryItemSize="SfListView_QueryItemSize"
+                ScrollStateChanged="SfListView_ScrollStateChanged"
+                SelectionChanged="SfListView_SelectionChanged"
+                SelectionChanging="SfListView_SelectionChanging"
+                SelectionMode="Single"
+                SizeChanged="SfListView_SizeChanged"
+                SwipeEnded="SfListView_SwipeEnded"
+                SwipeReset="SfListView_SwipeReset"
+                SwipeStarted="SfListView_SwipeStarted"
+                Swiping="SfListView_Swiping"
+                Unfocused="SfListView_Unfocused">
+                <listview:SfListView.Behaviors>
+                    <prismBehaviors:EventToCommandBehavior
+                        Command="{Binding ListViewHeightRequestResizeCommand}"
+                        CommandParameter="{x:Reference ListView_Monkeys}"
+                        EventName="Loaded" />
+                </listview:SfListView.Behaviors>
+                <listview:SfListView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout>
+                            <Label Text="{Binding Name}" />
+                            <Label Text="{Binding Location}" />
+                        </StackLayout>
+                    </DataTemplate>
+                </listview:SfListView.ItemTemplate>
+            </listview:SfListView>
+            <Label Text="This is Footer" />
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

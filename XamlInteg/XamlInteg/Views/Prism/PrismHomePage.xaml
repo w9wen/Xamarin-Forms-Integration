@@ -13,6 +13,10 @@
             Command="{Binding ButtonCommand}"
             CommandParameter="property_changed"
             Text="Prism Property Changed" />
-        <button:SfButton Command="{prismNavi:NavigateTo 'PrismLifecyclePage'}" Text="Prism Lifecycle"  CommandParameter="TEST" />
+        <button:SfButton
+            Command="{prismNavi:NavigateTo 'PrismLifecyclePage'}"
+            CommandParameter="TEST"
+            Text="Prism Lifecycle" />
+        <button:SfButton Command="{prismNavi:NavigateTo 'PrismEventToCommandBehaviorPage'}" Text="EventToCommandBehavior" />
     </StackLayout>
 </ContentPage>

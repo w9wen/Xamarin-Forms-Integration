@@ -63,6 +63,7 @@ namespace XamlInteg
             containerRegistry.RegisterForNavigation<CustomControlsHomePage, CustomControlsHomePageViewModel>();
             containerRegistry.RegisterForNavigation<ParallaxControlPage, ParallaxControlPageViewModel>();
             containerRegistry.RegisterForNavigation<SfBadgeViewPage, SfBadgeViewPageViewModel>();
+            containerRegistry.RegisterForNavigation<PrismEventToCommandBehaviorPage, PrismEventToCommandBehaviorPageViewModel>();
         }
     }
 }
