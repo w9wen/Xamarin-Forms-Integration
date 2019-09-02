@@ -6,7 +6,6 @@ using Syncfusion.XForms.iOS.TabView;
 using Syncfusion.XForms.iOS.MaskedEdit;
 using Syncfusion.XForms.iOS.TextInputLayout;
 using Syncfusion.XForms.iOS.ComboBox;
-using Syncfusion.SfCalendar.XForms.iOS;
 using Syncfusion.XForms.iOS.Buttons;
 using Syncfusion.XForms.iOS.PopupLayout;
 using Foundation;
@@ -31,17 +30,16 @@ namespace XamlInteg.iOS
         //
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
-global::Xamarin.Forms.Forms.Init();
-SfBadgeViewRenderer.Init();
-SfDataGridRenderer.Init();
-SfParallaxViewRenderer.Init();
-SfListViewRenderer.Init();
-SfTabViewRenderer.Init();
+            global::Xamarin.Forms.Forms.Init();
+            SfBadgeViewRenderer.Init();
+            SfDataGridRenderer.Init();
+            SfParallaxViewRenderer.Init();
+            SfListViewRenderer.Init();
+            SfTabViewRenderer.Init();
             SfMaskedEditRenderer.Init();
             SfButtonRenderer.Init();
             SfTextInputLayoutRenderer.Init();
             SfComboBoxRenderer.Init();
-            SfCalendarRenderer.Init();
             SfCheckBoxRenderer.Init();
 
             SfPopupLayoutRenderer.Init();

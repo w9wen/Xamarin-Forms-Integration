@@ -90,20 +90,6 @@ namespace XamlInteg.Droid
 			global::Syncfusion.XForms.Android.Core.Resource.Drawable.input_layout_drop_down_icon = global::XamlInteg.Droid.Resource.Drawable.input_layout_drop_down_icon;
 			global::Syncfusion.XForms.Android.Core.Resource.Drawable.inputlayout_togglecollapseicon = global::XamlInteg.Droid.Resource.Drawable.inputlayout_togglecollapseicon;
 			global::Syncfusion.XForms.Android.Core.Resource.Drawable.inputlayout_togglevisibleicon = global::XamlInteg.Droid.Resource.Drawable.inputlayout_togglevisibleicon;
-			global::Syncfusion.SfCalendar.XForms.Droid.Resource.Dimension.activity_horizontal_margin = global::XamlInteg.Droid.Resource.Dimension.activity_horizontal_margin;
-			global::Syncfusion.SfCalendar.XForms.Droid.Resource.Dimension.activity_vertical_margin = global::XamlInteg.Droid.Resource.Dimension.activity_vertical_margin;
-			global::Syncfusion.SfCalendar.XForms.Droid.Resource.Dimension.date_text_size = global::XamlInteg.Droid.Resource.Dimension.date_text_size;
-			global::Syncfusion.SfCalendar.XForms.Droid.Resource.Dimension.date_text_tab_size = global::XamlInteg.Droid.Resource.Dimension.date_text_tab_size;
-			global::Syncfusion.SfCalendar.XForms.Droid.Resource.Dimension.month_row_size = global::XamlInteg.Droid.Resource.Dimension.month_row_size;
-			global::Syncfusion.SfCalendar.XForms.Droid.Resource.Dimension.month_row_tab_size = global::XamlInteg.Droid.Resource.Dimension.month_row_tab_size;
-			global::Syncfusion.SfCalendar.XForms.Droid.Resource.Dimension.month_text_size = global::XamlInteg.Droid.Resource.Dimension.month_text_size;
-			global::Syncfusion.SfCalendar.XForms.Droid.Resource.Dimension.month_text_tab_size = global::XamlInteg.Droid.Resource.Dimension.month_text_tab_size;
-			global::Syncfusion.SfCalendar.XForms.Droid.Resource.Drawable.Icon = global::XamlInteg.Droid.Resource.Drawable.Icon;
-			global::Syncfusion.SfCalendar.XForms.Droid.Resource.Drawable.input_layout_drop_down_icon = global::XamlInteg.Droid.Resource.Drawable.input_layout_drop_down_icon;
-			global::Syncfusion.SfCalendar.XForms.Droid.Resource.Drawable.inputlayout_togglecollapseicon = global::XamlInteg.Droid.Resource.Drawable.inputlayout_togglecollapseicon;
-			global::Syncfusion.SfCalendar.XForms.Droid.Resource.Drawable.inputlayout_togglevisibleicon = global::XamlInteg.Droid.Resource.Drawable.inputlayout_togglevisibleicon;
-			global::Syncfusion.SfCalendar.XForms.Droid.Resource.String.sfcalendar_inlineviewalldaytext = global::XamlInteg.Droid.Resource.String.sfcalendar_inlineviewalldaytext;
-			global::Syncfusion.SfCalendar.XForms.Droid.Resource.String.sfcalendar_inlineviewnoappointmenttext = global::XamlInteg.Droid.Resource.String.sfcalendar_inlineviewnoappointmenttext;
 			global::Syncfusion.XForms.Android.ComboBox.Resource.Attribute.layoutManager = global::XamlInteg.Droid.Resource.Attribute.layoutManager;
 			global::Syncfusion.XForms.Android.ComboBox.Resource.Attribute.reverseLayout = global::XamlInteg.Droid.Resource.Attribute.reverseLayout;
 			global::Syncfusion.XForms.Android.ComboBox.Resource.Attribute.spanCount = global::XamlInteg.Droid.Resource.Attribute.spanCount;
@@ -5390,12 +5376,6 @@ namespace XamlInteg.Droid
 			// aapt resource value: 0x7f0a0012
 			public const int abc_text_size_title_material_toolbar = 2131361810;
 			
-			// aapt resource value: 0x7f0a00e3
-			public const int activity_horizontal_margin = 2131362019;
-			
-			// aapt resource value: 0x7f0a00e4
-			public const int activity_vertical_margin = 2131362020;
-			
 			// aapt resource value: 0x7f0a00cb
 			public const int browser_actions_context_menu_max_width = 2131361995;
 			
@@ -5431,12 +5411,6 @@ namespace XamlInteg.Droid
 			
 			// aapt resource value: 0x7f0a00d7
 			public const int compat_notification_large_icon_max_width = 2131362007;
-			
-			// aapt resource value: 0x7f0a00e5
-			public const int date_text_size = 2131362021;
-			
-			// aapt resource value: 0x7f0a00e6
-			public const int date_text_tab_size = 2131362022;
 			
 			// aapt resource value: 0x7f0a0077
 			public const int design_appbar_elevation = 2131361911;
@@ -5570,8 +5544,8 @@ namespace XamlInteg.Droid
 			// aapt resource value: 0x7f0a009a
 			public const int design_textinput_caption_translate_y = 2131361946;
 			
-			// aapt resource value: 0x7f0a00eb
-			public const int disabledAlpha = 2131362027;
+			// aapt resource value: 0x7f0a00e3
+			public const int disabledAlpha = 2131362019;
 			
 			// aapt resource value: 0x7f0a005a
 			public const int disabled_alpha_material_dark = 2131361882;
@@ -5617,18 +5591,6 @@ namespace XamlInteg.Droid
 			
 			// aapt resource value: 0x7f0a0005
 			public const int item_touch_helper_swipe_escape_velocity = 2131361797;
-			
-			// aapt resource value: 0x7f0a00e9
-			public const int month_row_size = 2131362025;
-			
-			// aapt resource value: 0x7f0a00ea
-			public const int month_row_tab_size = 2131362026;
-			
-			// aapt resource value: 0x7f0a00e7
-			public const int month_text_size = 2131362023;
-			
-			// aapt resource value: 0x7f0a00e8
-			public const int month_text_tab_size = 2131362024;
 			
 			// aapt resource value: 0x7f0a0006
 			public const int mr_controller_volume_group_list_item_height = 2131361798;
@@ -6141,26 +6103,26 @@ namespace XamlInteg.Droid
 			// aapt resource value: 0x7f020054
 			public const int avd_hide_password = 2130837588;
 			
+			// aapt resource value: 0x7f020148
+			public const int avd_hide_password_1 = 2130837832;
+			
 			// aapt resource value: 0x7f020149
-			public const int avd_hide_password_1 = 2130837833;
+			public const int avd_hide_password_2 = 2130837833;
 			
 			// aapt resource value: 0x7f02014a
-			public const int avd_hide_password_2 = 2130837834;
-			
-			// aapt resource value: 0x7f02014b
-			public const int avd_hide_password_3 = 2130837835;
+			public const int avd_hide_password_3 = 2130837834;
 			
 			// aapt resource value: 0x7f020055
 			public const int avd_show_password = 2130837589;
 			
+			// aapt resource value: 0x7f02014b
+			public const int avd_show_password_1 = 2130837835;
+			
 			// aapt resource value: 0x7f02014c
-			public const int avd_show_password_1 = 2130837836;
+			public const int avd_show_password_2 = 2130837836;
 			
 			// aapt resource value: 0x7f02014d
-			public const int avd_show_password_2 = 2130837837;
-			
-			// aapt resource value: 0x7f02014e
-			public const int avd_show_password_3 = 2130837838;
+			public const int avd_show_password_3 = 2130837837;
 			
 			// aapt resource value: 0x7f020056
 			public const int btn_checkbox = 2130837590;
@@ -6757,139 +6719,136 @@ namespace XamlInteg.Droid
 			public const int ic_vol_type_tv_light = 2130837787;
 			
 			// aapt resource value: 0x7f02011c
-			public const int Icon = 2130837788;
+			public const int input_layout_drop_down_icon = 2130837788;
 			
 			// aapt resource value: 0x7f02011d
-			public const int input_layout_drop_down_icon = 2130837789;
+			public const int inputlayout_togglecollapseicon = 2130837789;
 			
 			// aapt resource value: 0x7f02011e
-			public const int inputlayout_togglecollapseicon = 2130837790;
+			public const int inputlayout_togglevisibleicon = 2130837790;
 			
 			// aapt resource value: 0x7f02011f
-			public const int inputlayout_togglevisibleicon = 2130837791;
+			public const int mr_button_connected_dark = 2130837791;
 			
 			// aapt resource value: 0x7f020120
-			public const int mr_button_connected_dark = 2130837792;
+			public const int mr_button_connected_light = 2130837792;
 			
 			// aapt resource value: 0x7f020121
-			public const int mr_button_connected_light = 2130837793;
+			public const int mr_button_connecting_dark = 2130837793;
 			
 			// aapt resource value: 0x7f020122
-			public const int mr_button_connecting_dark = 2130837794;
+			public const int mr_button_connecting_light = 2130837794;
 			
 			// aapt resource value: 0x7f020123
-			public const int mr_button_connecting_light = 2130837795;
+			public const int mr_button_dark = 2130837795;
 			
 			// aapt resource value: 0x7f020124
-			public const int mr_button_dark = 2130837796;
+			public const int mr_button_light = 2130837796;
 			
 			// aapt resource value: 0x7f020125
-			public const int mr_button_light = 2130837797;
+			public const int mr_dialog_close_dark = 2130837797;
 			
 			// aapt resource value: 0x7f020126
-			public const int mr_dialog_close_dark = 2130837798;
+			public const int mr_dialog_close_light = 2130837798;
 			
 			// aapt resource value: 0x7f020127
-			public const int mr_dialog_close_light = 2130837799;
+			public const int mr_dialog_material_background_dark = 2130837799;
 			
 			// aapt resource value: 0x7f020128
-			public const int mr_dialog_material_background_dark = 2130837800;
+			public const int mr_dialog_material_background_light = 2130837800;
 			
 			// aapt resource value: 0x7f020129
-			public const int mr_dialog_material_background_light = 2130837801;
+			public const int mr_group_collapse = 2130837801;
 			
 			// aapt resource value: 0x7f02012a
-			public const int mr_group_collapse = 2130837802;
+			public const int mr_group_expand = 2130837802;
 			
 			// aapt resource value: 0x7f02012b
-			public const int mr_group_expand = 2130837803;
+			public const int mr_media_pause_dark = 2130837803;
 			
 			// aapt resource value: 0x7f02012c
-			public const int mr_media_pause_dark = 2130837804;
+			public const int mr_media_pause_light = 2130837804;
 			
 			// aapt resource value: 0x7f02012d
-			public const int mr_media_pause_light = 2130837805;
+			public const int mr_media_play_dark = 2130837805;
 			
 			// aapt resource value: 0x7f02012e
-			public const int mr_media_play_dark = 2130837806;
+			public const int mr_media_play_light = 2130837806;
 			
 			// aapt resource value: 0x7f02012f
-			public const int mr_media_play_light = 2130837807;
+			public const int mr_media_stop_dark = 2130837807;
 			
 			// aapt resource value: 0x7f020130
-			public const int mr_media_stop_dark = 2130837808;
+			public const int mr_media_stop_light = 2130837808;
 			
 			// aapt resource value: 0x7f020131
-			public const int mr_media_stop_light = 2130837809;
+			public const int mr_vol_type_audiotrack_dark = 2130837809;
 			
 			// aapt resource value: 0x7f020132
-			public const int mr_vol_type_audiotrack_dark = 2130837810;
+			public const int mr_vol_type_audiotrack_light = 2130837810;
 			
 			// aapt resource value: 0x7f020133
-			public const int mr_vol_type_audiotrack_light = 2130837811;
+			public const int mtrl_snackbar_background = 2130837811;
 			
 			// aapt resource value: 0x7f020134
-			public const int mtrl_snackbar_background = 2130837812;
+			public const int mtrl_tabs_default_indicator = 2130837812;
 			
 			// aapt resource value: 0x7f020135
-			public const int mtrl_tabs_default_indicator = 2130837813;
+			public const int navigation_empty_icon = 2130837813;
 			
 			// aapt resource value: 0x7f020136
-			public const int navigation_empty_icon = 2130837814;
+			public const int notification_action_background = 2130837814;
 			
 			// aapt resource value: 0x7f020137
-			public const int notification_action_background = 2130837815;
+			public const int notification_bg = 2130837815;
 			
 			// aapt resource value: 0x7f020138
-			public const int notification_bg = 2130837816;
+			public const int notification_bg_low = 2130837816;
 			
 			// aapt resource value: 0x7f020139
-			public const int notification_bg_low = 2130837817;
+			public const int notification_bg_low_normal = 2130837817;
 			
 			// aapt resource value: 0x7f02013a
-			public const int notification_bg_low_normal = 2130837818;
+			public const int notification_bg_low_pressed = 2130837818;
 			
 			// aapt resource value: 0x7f02013b
-			public const int notification_bg_low_pressed = 2130837819;
+			public const int notification_bg_normal = 2130837819;
 			
 			// aapt resource value: 0x7f02013c
-			public const int notification_bg_normal = 2130837820;
+			public const int notification_bg_normal_pressed = 2130837820;
 			
 			// aapt resource value: 0x7f02013d
-			public const int notification_bg_normal_pressed = 2130837821;
-			
-			// aapt resource value: 0x7f02013e
-			public const int notification_icon_background = 2130837822;
-			
-			// aapt resource value: 0x7f020147
-			public const int notification_template_icon_bg = 2130837831;
-			
-			// aapt resource value: 0x7f020148
-			public const int notification_template_icon_low_bg = 2130837832;
-			
-			// aapt resource value: 0x7f02013f
-			public const int notification_tile_bg = 2130837823;
-			
-			// aapt resource value: 0x7f020140
-			public const int notify_panel_notification_icon_bg = 2130837824;
-			
-			// aapt resource value: 0x7f020141
-			public const int popup_forms_android_close_icon = 2130837825;
-			
-			// aapt resource value: 0x7f020142
-			public const int popup_forms_android_shadow = 2130837826;
-			
-			// aapt resource value: 0x7f020143
-			public const int popup_forms_dark_theme_close_icon = 2130837827;
-			
-			// aapt resource value: 0x7f020144
-			public const int popup_forms_light_theme_close_icon = 2130837828;
-			
-			// aapt resource value: 0x7f020145
-			public const int tooltip_frame_dark = 2130837829;
+			public const int notification_icon_background = 2130837821;
 			
 			// aapt resource value: 0x7f020146
-			public const int tooltip_frame_light = 2130837830;
+			public const int notification_template_icon_bg = 2130837830;
+			
+			// aapt resource value: 0x7f020147
+			public const int notification_template_icon_low_bg = 2130837831;
+			
+			// aapt resource value: 0x7f02013e
+			public const int notification_tile_bg = 2130837822;
+			
+			// aapt resource value: 0x7f02013f
+			public const int notify_panel_notification_icon_bg = 2130837823;
+			
+			// aapt resource value: 0x7f020140
+			public const int popup_forms_android_close_icon = 2130837824;
+			
+			// aapt resource value: 0x7f020141
+			public const int popup_forms_android_shadow = 2130837825;
+			
+			// aapt resource value: 0x7f020142
+			public const int popup_forms_dark_theme_close_icon = 2130837826;
+			
+			// aapt resource value: 0x7f020143
+			public const int popup_forms_light_theme_close_icon = 2130837827;
+			
+			// aapt resource value: 0x7f020144
+			public const int tooltip_frame_dark = 2130837828;
+			
+			// aapt resource value: 0x7f020145
+			public const int tooltip_frame_light = 2130837829;
 			
 			static Drawable()
 			{
@@ -8411,12 +8370,6 @@ namespace XamlInteg.Droid
 			
 			// aapt resource value: 0x7f0c0033
 			public const int search_menu_title = 2131492915;
-			
-			// aapt resource value: 0x7f0c005b
-			public const int sfcalendar_inlineviewalldaytext = 2131492955;
-			
-			// aapt resource value: 0x7f0c005a
-			public const int sfcalendar_inlineviewnoappointmenttext = 2131492954;
 			
 			// aapt resource value: 0x7f0c004d
 			public const int status_bar_notification_info_overflow = 2131492941;
