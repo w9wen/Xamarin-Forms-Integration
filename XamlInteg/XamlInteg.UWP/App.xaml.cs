@@ -6,7 +6,6 @@ using Syncfusion.XForms.UWP.TabView;
 using Syncfusion.XForms.UWP.MaskedEdit;
 using Syncfusion.XForms.UWP.TextInputLayout;
 using Syncfusion.XForms.UWP.ComboBox;
-using Syncfusion.SfCalendar.XForms.UWP;
 using Syncfusion.XForms.UWP.Buttons;
 using Syncfusion.XForms.UWP.PopupLayout;
 using System.Reflection;
@@ -51,8 +50,6 @@ namespace XamlInteg.UWP
         /// <param name="e">Details about the launch request and process.</param>
         protected override void OnLaunched(LaunchActivatedEventArgs e)
         {
-
-
             Frame rootFrame = Window.Current.Content as Frame;
 
             // Do not repeat app initialization when the Window already has content,
@@ -64,20 +61,19 @@ namespace XamlInteg.UWP
 
                 rootFrame.NavigationFailed += OnNavigationFailed;
 
-List<Assembly> assembliesToInclude = new List<Assembly>();
-assembliesToInclude.Add(typeof(SfBadgeViewRenderer).GetTypeInfo().Assembly);
-assembliesToInclude.Add(typeof(SfDataGridRenderer).GetTypeInfo().Assembly);
-assembliesToInclude.Add(typeof(SfParallaxViewRenderer).GetTypeInfo().Assembly);
-assembliesToInclude.Add(typeof(SfListViewRenderer).GetTypeInfo().Assembly);
-assembliesToInclude.Add(typeof(SfTabViewRenderer).GetTypeInfo().Assembly);
-assembliesToInclude.Add(typeof(SfMaskedEditRenderer).GetTypeInfo().Assembly);
-assembliesToInclude.Add(typeof(SfButtonRenderer).GetTypeInfo().Assembly);
-assembliesToInclude.Add(typeof(SfTextInputLayoutRenderer).GetTypeInfo().Assembly);
-assembliesToInclude.Add(typeof(SfComboBoxRenderer).GetTypeInfo().Assembly);
-assembliesToInclude.Add(typeof(SfCalendarRenderer).GetTypeInfo().Assembly);
-assembliesToInclude.Add(typeof(SfCheckBoxRenderer).GetTypeInfo().Assembly);
-assembliesToInclude.Add(typeof(SfPopupLayoutRenderer).GetTypeInfo().Assembly);
-Xamarin.Forms.Forms.Init(e, assembliesToInclude);
+                List<Assembly> assembliesToInclude = new List<Assembly>();
+                assembliesToInclude.Add(typeof(SfBadgeViewRenderer).GetTypeInfo().Assembly);
+                assembliesToInclude.Add(typeof(SfDataGridRenderer).GetTypeInfo().Assembly);
+                assembliesToInclude.Add(typeof(SfParallaxViewRenderer).GetTypeInfo().Assembly);
+                assembliesToInclude.Add(typeof(SfListViewRenderer).GetTypeInfo().Assembly);
+                assembliesToInclude.Add(typeof(SfTabViewRenderer).GetTypeInfo().Assembly);
+                assembliesToInclude.Add(typeof(SfMaskedEditRenderer).GetTypeInfo().Assembly);
+                assembliesToInclude.Add(typeof(SfButtonRenderer).GetTypeInfo().Assembly);
+                assembliesToInclude.Add(typeof(SfTextInputLayoutRenderer).GetTypeInfo().Assembly);
+                assembliesToInclude.Add(typeof(SfComboBoxRenderer).GetTypeInfo().Assembly);
+                assembliesToInclude.Add(typeof(SfCheckBoxRenderer).GetTypeInfo().Assembly);
+                assembliesToInclude.Add(typeof(SfPopupLayoutRenderer).GetTypeInfo().Assembly);
+                Xamarin.Forms.Forms.Init(e, assembliesToInclude);
 
                 if (e.PreviousExecutionState == ApplicationExecutionState.Terminated)
                 {
@@ -104,7 +100,7 @@ Xamarin.Forms.Forms.Init(e, assembliesToInclude);
         /// </summary>
         /// <param name="sender">The Frame which failed navigation</param>
         /// <param name="e">Details about the navigation failure</param>
-        void OnNavigationFailed(object sender, NavigationFailedEventArgs e)
+        private void OnNavigationFailed(object sender, NavigationFailedEventArgs e)
         {
             throw new Exception("Failed to load Page " + e.SourcePageType.FullName);
         }
