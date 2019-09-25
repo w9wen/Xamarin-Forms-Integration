@@ -11,7 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="LiveXAML" Version="2.1.72" />
+    <PackageReference Include="LiveXAML" Version="2.1.73" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
     <PackageReference Include="Plugin.Fingerprint" Version="1.4.9" />
     <PackageReference Include="Syncfusion.Licensing" Version="17.2.0.51" />
@@ -25,10 +25,11 @@
     <PackageReference Include="Syncfusion.Xamarin.SfListView" Version="17.2.0.51" />
     <PackageReference Include="Syncfusion.Xamarin.SfMaskedEdit" Version="17.2.0.51" />
     <PackageReference Include="Syncfusion.Xamarin.SfParallaxView" Version="17.2.0.51" />
+    <PackageReference Include="Syncfusion.Xamarin.SfPicker" Version="17.2.0.51" />
     <PackageReference Include="Syncfusion.Xamarin.SfPopupLayout" Version="17.2.0.51" />
     <PackageReference Include="Syncfusion.Xamarin.SfTabView" Version="17.2.0.51" />
-    <PackageReference Include="Xamarin.Essentials" Version="1.3.0" />
-    <PackageReference Include="Xamarin.Forms" Version="4.2.0.778463" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.3.1" />
+    <PackageReference Include="Xamarin.Forms" Version="4.2.0.815419" />
     <PackageReference Include="Prism.DryIoc.Forms" Version="7.2.0.1367" />
     <PackageReference Include="Xamarin.Forms.DebugRainbows" Version="1.0.16" />
   </ItemGroup>
@@ -80,6 +81,9 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\SfBadgeViewPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Syncfusion\SfPickerPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\Syncfusion\SfParallaxViewPage.xaml">

@@ -16,5 +16,6 @@
         <button:SfButton Command="{prismNavi:NavigateTo 'SfTabViewPage'}" Text="TabView" />
         <button:SfButton Command="{prismNavi:NavigateTo 'SfParallaxViewPage'}" Text="ParallaxView" />
         <button:SfButton Command="{prismNavi:NavigateTo 'SfBadgeViewPage'}" Text="BadgeView" />
+        <button:SfButton Command="{prismNavi:NavigateTo 'SfPickerPage'}" Text="Picker" />
     </StackLayout>
 </ContentPage>

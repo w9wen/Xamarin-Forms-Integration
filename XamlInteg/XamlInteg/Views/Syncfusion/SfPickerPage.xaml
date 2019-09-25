@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="XamlInteg.Views.SfPickerPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:controls="clr-namespace:XamlInteg.Controls"
+    xmlns:picker="clr-namespace:Syncfusion.SfPicker.XForms;assembly=Syncfusion.SfPicker.XForms"
+    xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+    xmlns:prismBehaviors="clr-namespace:Prism.Behaviors;assembly=Prism.Forms"
+    prism:ViewModelLocator.AutowireViewModel="True">
+    <StackLayout>
+
+        <Button Clicked="Button_Clicked" Text="Test Date Picker" />
+        <Label Text="{Binding SelectedDate}" />
+        <!--<picker:SfPicker
+            x:Name="DatePicker_Test"
+            HeaderText="Color"
+            HeightRequest="200"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            WidthRequest="200" />-->
+        <controls:DatePickerControl
+            x:Name="DatePicker_Test"
+            ColumnHeaderHeight="40"
+            HorizontalOptions="Center"
+            PickerHeight="400"
+            PickerMode="Dialog"
+            PickerWidth="300"
+            SelectedItem="{Binding SelectedDateItem}"
+            VerticalOptions="Center">
+            <controls:DatePickerControl.Behaviors>
+                <prismBehaviors:EventToCommandBehavior Command="{Binding SelectedDateCommand}" EventName="OkButtonClicked" />
+            </controls:DatePickerControl.Behaviors>
+        </controls:DatePickerControl>
+    </StackLayout>
+</ContentPage>

@@ -1,3 +1,4 @@
+using Syncfusion.SfPicker.XForms.UWP;
 using Syncfusion.XForms.UWP.BadgeView;
 using Syncfusion.SfDataGrid.XForms.UWP;
 using Syncfusion.XForms.UWP.ParallaxView;
@@ -61,7 +62,8 @@ namespace XamlInteg.UWP
 
                 rootFrame.NavigationFailed += OnNavigationFailed;
 
-                List<Assembly> assembliesToInclude = new List<Assembly>();
+List<Assembly> assembliesToInclude = new List<Assembly>();
+assembliesToInclude.Add(typeof(SfPickerRenderer).GetTypeInfo().Assembly);
                 assembliesToInclude.Add(typeof(SfBadgeViewRenderer).GetTypeInfo().Assembly);
                 assembliesToInclude.Add(typeof(SfDataGridRenderer).GetTypeInfo().Assembly);
                 assembliesToInclude.Add(typeof(SfParallaxViewRenderer).GetTypeInfo().Assembly);
