@@ -1,3 +1,5 @@
+using Syncfusion.SfPdfViewer.XForms.iOS;
+using Syncfusion.SfRangeSlider.XForms.iOS;
 using Syncfusion.SfPicker.XForms.iOS;
 using Syncfusion.XForms.iOS.BadgeView;
 using Syncfusion.SfDataGrid.XForms.iOS;
@@ -32,6 +34,8 @@ namespace XamlInteg.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             global::Xamarin.Forms.Forms.Init();
+            SfPdfDocumentViewRenderer.Init();
+            SfRangeSliderRenderer.Init();
             SfPickerRenderer.Init();
             SfBadgeViewRenderer.Init();
             SfDataGridRenderer.Init();
