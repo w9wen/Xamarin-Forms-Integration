@@ -5,13 +5,23 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:listview="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
     xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+    xmlns:prismBehaviors="clr-namespace:Prism.Behaviors;assembly=Prism.Forms"
+    xmlns:pulltorefresh="clr-namespace:Syncfusion.SfPullToRefresh.XForms;assembly=Syncfusion.SfPullToRefresh.XForms"
     Title="Syncfusion ListView"
     prism:ViewModelLocator.AutowireViewModel="True">
-    <listview:SfListView ItemsSource="{Binding Monkeys}">
-        <listview:SfListView.ItemTemplate>
-            <DataTemplate>
-                <Label Text="{Binding Name}" />
-            </DataTemplate>
-        </listview:SfListView.ItemTemplate>
-    </listview:SfListView>
+
+    <pulltorefresh:SfPullToRefresh x:Name="PullToRefrsh_Monkeys">
+        <pulltorefresh:SfPullToRefresh.Behaviors>
+            <prismBehaviors:EventToCommandBehavior Command="{Binding ListViewRefreshingCommand}" CommandParameter="{x:Reference PullToRefrsh_Monkeys}" EventName="Refreshing" />
+        </pulltorefresh:SfPullToRefresh.Behaviors>
+        <pulltorefresh:SfPullToRefresh.PullableContent>
+            <listview:SfListView ItemsSource="{Binding Monkeys}">
+                <listview:SfListView.ItemTemplate>
+                    <DataTemplate>
+                        <Label Text="{Binding Name}" />
+                    </DataTemplate>
+                </listview:SfListView.ItemTemplate>
+            </listview:SfListView>
+        </pulltorefresh:SfPullToRefresh.PullableContent>
+    </pulltorefresh:SfPullToRefresh>
 </ContentPage>

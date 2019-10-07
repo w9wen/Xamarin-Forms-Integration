@@ -111,6 +111,9 @@
     <PackageReference Include="Syncfusion.Xamarin.SfPopupLayout">
       <Version>17.3.0.14</Version>
     </PackageReference>
+    <PackageReference Include="Syncfusion.Xamarin.SfPullToRefresh">
+      <Version>17.3.0.14</Version>
+    </PackageReference>
     <PackageReference Include="Syncfusion.Xamarin.SfTabView">
       <Version>17.3.0.14</Version>
     </PackageReference>

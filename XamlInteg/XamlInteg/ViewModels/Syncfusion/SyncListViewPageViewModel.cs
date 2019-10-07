@@ -1,24 +1,50 @@
 ﻿using Prism.Commands;
 using Prism.Mvvm;
+using Syncfusion.SfPullToRefresh.XForms;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
+using System.Threading.Tasks;
 using XamlInteg.Models;
 
 namespace XamlInteg.ViewModels
 {
     public class SyncListViewPageViewModel : BindableBase
     {
+        #region Fields
+
         private ObservableCollection<Monkey> monkeys;
 
+        #endregion Fields
+
+        #region Properties
+
         public ObservableCollection<Monkey> Monkeys { get => monkeys; set => monkeys = value; }
+        public DelegateCommand<SfPullToRefresh> ListViewRefreshingCommand { get; }
+
+        #endregion Properties
+
+        #region Constructor
 
         public SyncListViewPageViewModel()
         {
             Monkeys = new ObservableCollection<Monkey>();
+            this.ListViewRefreshingCommand = new DelegateCommand<SfPullToRefresh>(ListViewRefreshingExecute);
             CreateMonkeyCollection();
         }
+
+        private async void ListViewRefreshingExecute(SfPullToRefresh sfPullToRefresh)
+        {
+            sfPullToRefresh.IsRefreshing = true;
+            CreateMonkeyCollection();
+            await Task.Delay(3000);
+            sfPullToRefresh.IsRefreshing = false;
+        }
+
+        #endregion Constructor
+
+        #region Methods
 
         private void CreateMonkeyCollection()
         {
@@ -158,5 +184,7 @@ namespace XamlInteg.ViewModels
                 ImageUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Gelada-Pavian.jpg/320px-Gelada-Pavian.jpg"
             });
         }
+
+        #endregion Methods
     }
 }

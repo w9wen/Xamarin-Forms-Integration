@@ -1,3 +1,4 @@
+using Syncfusion.SfPullToRefresh.XForms.UWP;
 using Syncfusion.SfPdfViewer.XForms.UWP;
 using Syncfusion.SfRangeSlider.XForms.UWP;
 using Syncfusion.SfPicker.XForms.UWP;
@@ -65,6 +66,7 @@ namespace XamlInteg.UWP
                 rootFrame.NavigationFailed += OnNavigationFailed;
 
 List<Assembly> assembliesToInclude = new List<Assembly>();
+assembliesToInclude.Add(typeof(SfPullToRefreshRenderer).GetTypeInfo().Assembly);
 assembliesToInclude.Add(typeof(SfPdfDocumentViewRenderer).GetTypeInfo().Assembly);
 assembliesToInclude.Add(typeof(SfRangeSliderRenderer).GetTypeInfo().Assembly);
 assembliesToInclude.Add(typeof(SfPickerRenderer).GetTypeInfo().Assembly);

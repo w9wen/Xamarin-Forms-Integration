@@ -1,3 +1,4 @@
+using Syncfusion.SfPullToRefresh.XForms.UWP;
 using Syncfusion.SfDataGrid.XForms.UWP;
 using Syncfusion.ListView.XForms.UWP;
 using Syncfusion.XForms.UWP.PopupLayout;
@@ -25,6 +26,7 @@ namespace XamlInteg.UWP
         public MainPage()
         {
 this.InitializeComponent();
+SfPullToRefreshRenderer.Init();
 SfDataGridRenderer.Init();
 SfListViewRenderer.Init();
             SfPopupLayoutRenderer.Init();
