@@ -66,6 +66,7 @@ namespace XamlInteg
             containerRegistry.RegisterForNavigation<PrismEventToCommandBehaviorPage, PrismEventToCommandBehaviorPageViewModel>();
             containerRegistry.RegisterForNavigation<SfPickerPage, SfPickerPageViewModel>();
             containerRegistry.RegisterForNavigation<SfPdfViewerPage, SfPdfViewerPageViewModel>();
+            containerRegistry.RegisterForNavigation<SfPdfViewerContentPage, SfPdfViewerContentPageViewModel>();
         }
     }
 }
