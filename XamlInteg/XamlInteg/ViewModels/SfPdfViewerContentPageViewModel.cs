@@ -37,7 +37,7 @@ namespace XamlInteg.ViewModels
         {
             //PdfDocumentStream = typeof(App).GetTypeInfo().Assembly.GetManifestResourceStream("XamlInteg.Assets.Xamarin Forms Succinctly.pdf");
 
-            var url = "sample-url";
+            var url = "https://www.shin-her.com.tw/news/%E4%BA%BA%E5%8A%9B%E8%B3%87%E6%BA%90%E7%B6%B2%E4%B8%8A%E5%82%B3%E8%AA%AA%E6%98%8E%E6%96%87%E4%BB%B6.pdf";
             var result = await DownloadPdfStream(url);
             PdfDocumentStream = result;
         }
