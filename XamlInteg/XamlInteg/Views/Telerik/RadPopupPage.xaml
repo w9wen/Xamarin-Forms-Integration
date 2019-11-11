@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="XamlInteg.Views.RadPopupPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:prism="http://prismlibrary.com"
+    xmlns:telerikInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input"
+    xmlns:telerikPrimitives="clr-namespace:Telerik.XamarinForms.Primitives;assembly=Telerik.XamarinForms.Primitives"
+    Title=" Telerik Popup"
+    prism:ViewModelLocator.AutowireViewModel="True">
+    <ContentPage.Content>
+
+        <Button
+            Clicked="ShowPopup"
+            HorizontalOptions="Center"
+            Text="Click here to rate"
+            VerticalOptions="Start">
+            <telerikPrimitives:RadPopup.Popup>
+                <telerikPrimitives:RadPopup
+                    x:Name="popup"
+                    IsModal="True"
+                    OutsideBackgroundColor="#6F000000">
+                    <telerikPrimitives:RadBorder BackgroundColor="Wheat" CornerRadius="8">
+                        <Grid Padding="20">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="30" />
+                                <RowDefinition Height="20" />
+                                <RowDefinition Height="40" />
+                            </Grid.RowDefinitions>
+                            <Label Text="Please rate your experience" />
+                            <!--<telerikInput:RadShapeRating Grid.Row="1" />-->
+                            <Button
+                                Grid.Row="2"
+                                Padding="2"
+                                Clicked="ClosePopup"
+                                HorizontalOptions="End"
+                                Text="Send" />
+                        </Grid>
+                    </telerikPrimitives:RadBorder>
+                </telerikPrimitives:RadPopup>
+            </telerikPrimitives:RadPopup.Popup>
+        </Button>
+    </ContentPage.Content>
+</ContentPage>

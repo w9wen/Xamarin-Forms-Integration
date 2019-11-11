@@ -34,6 +34,7 @@
     <PackageReference Include="LiveXAML" Version="2.1.73" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
     <PackageReference Include="Plugin.Fingerprint" Version="1.4.9" />
+    <PackageReference Include="SkiaSharp.Views.Forms" Version="1.68.0" />
     <PackageReference Include="Syncfusion.Licensing" Version="17.3.0.26" />
     <PackageReference Include="Syncfusion.Xamarin.Buttons" Version="17.3.0.26" />
     <PackageReference Include="Syncfusion.Xamarin.Core" Version="17.3.0.26" />
@@ -54,6 +55,15 @@
     <PackageReference Include="Xamarin.Forms" Version="4.3.0.947036" />
     <PackageReference Include="Prism.DryIoc.Forms" Version="7.2.0.1367" />
     <PackageReference Include="Xamarin.Forms.DebugRainbows" Version="1.0.16" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Telerik.XamarinForms.Common">
+      <HintPath>C:\Program Files (x86)\Progress\Telerik UI for Xamarin R3 2019\Binaries\Portable\Telerik.XamarinForms.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.XamarinForms.Primitives">
+      <HintPath>C:\Program Files (x86)\Progress\Telerik UI for Xamarin R3 2019\Binaries\Portable\Telerik.XamarinForms.Primitives.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
   <ItemGroup>
@@ -100,6 +110,9 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\Prism\PrismLifecyclePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Telerik\RadPopupPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\SfPdfViewerContentPage.xaml">

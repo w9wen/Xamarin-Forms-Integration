@@ -67,6 +67,7 @@ namespace XamlInteg
             containerRegistry.RegisterForNavigation<SfPickerPage, SfPickerPageViewModel>();
             containerRegistry.RegisterForNavigation<SfPdfViewerPage, SfPdfViewerPageViewModel>();
             containerRegistry.RegisterForNavigation<SfPdfViewerContentPage, SfPdfViewerContentPageViewModel>();
+            containerRegistry.RegisterForNavigation<RadPopupPage, RadPopupPageViewModel>();
         }
     }
 }

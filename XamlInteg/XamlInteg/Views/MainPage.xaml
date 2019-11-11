@@ -32,5 +32,6 @@
             Text="Sticky using Scroll View" />
 
         <button:SfButton Command="{prismNavi:NavigateTo 'CustomControlsHomePage'}" Text="Custom Controls" />
+        <button:SfButton Command="{prismNavi:NavigateTo 'RadPopupPage'}" Text="Telerik Popup" />
     </StackLayout>
 </ContentPage>

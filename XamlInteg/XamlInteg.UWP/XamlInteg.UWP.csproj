@@ -131,6 +131,9 @@
     <PackageReference Include="Plugin.Fingerprint">
       <Version>1.4.9</Version>
     </PackageReference>
+    <PackageReference Include="SkiaSharp.Views.Forms">
+      <Version>1.68.0</Version>
+    </PackageReference>
     <PackageReference Include="Syncfusion.Licensing">
       <Version>17.3.0.26</Version>
     </PackageReference>
@@ -184,6 +187,20 @@
       <Project>{4a69d150-de24-4fbb-9d36-b5ac32feff37}</Project>
       <Name>XamlInteg</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Telerik.Core">
+      <HintPath>C:\Program Files (x86)\Progress\Telerik UI for Xamarin R3 2019\Binaries\UWP\Telerik.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.UI.Xaml.Primitives.UWP">
+      <HintPath>C:\Program Files (x86)\Progress\Telerik UI for Xamarin R3 2019\Binaries\UWP\Telerik.UI.Xaml.Primitives.UWP.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.XamarinForms.Common">
+      <HintPath>C:\Program Files (x86)\Progress\Telerik UI for Xamarin R3 2019\Binaries\UWP\Telerik.XamarinForms.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.XamarinForms.Primitives">
+      <HintPath>C:\Program Files (x86)\Progress\Telerik UI for Xamarin R3 2019\Binaries\UWP\Telerik.XamarinForms.Primitives.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
