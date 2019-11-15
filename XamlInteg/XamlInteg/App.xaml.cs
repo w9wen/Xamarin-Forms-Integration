@@ -68,6 +68,8 @@ namespace XamlInteg
             containerRegistry.RegisterForNavigation<SfPdfViewerPage, SfPdfViewerPageViewModel>();
             containerRegistry.RegisterForNavigation<SfPdfViewerContentPage, SfPdfViewerContentPageViewModel>();
             containerRegistry.RegisterForNavigation<RadPopupPage, RadPopupPageViewModel>();
+            containerRegistry.RegisterForNavigation<RadAutoCompletePage, RadAutoCompletePageViewModel>();
+            containerRegistry.RegisterForNavigation<TelerikHomePage, TelerikHomePageViewModel>();
         }
     }
 }

@@ -64,11 +64,26 @@
     <Reference Include="Telerik.Xamarin.Android.Common">
       <HintPath>C:\Program Files (x86)\Progress\Telerik UI for Xamarin R3 2019\Binaries\Android\Telerik.Xamarin.Android.Common.dll</HintPath>
     </Reference>
+    <Reference Include="Telerik.Xamarin.Android.Data">
+      <HintPath>C:\Program Files (x86)\Progress\Telerik UI for Xamarin R3 2019\Binaries\Android\Telerik.Xamarin.Android.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Xamarin.Android.Input">
+      <HintPath>C:\Program Files (x86)\Progress\Telerik UI for Xamarin R3 2019\Binaries\Android\Telerik.Xamarin.Android.Input.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Xamarin.Android.List">
+      <HintPath>C:\Program Files (x86)\Progress\Telerik UI for Xamarin R3 2019\Binaries\Android\Telerik.Xamarin.Android.List.dll</HintPath>
+    </Reference>
     <Reference Include="Telerik.Xamarin.Android.Primitives">
       <HintPath>C:\Program Files (x86)\Progress\Telerik UI for Xamarin R3 2019\Binaries\Android\Telerik.Xamarin.Android.Primitives.dll</HintPath>
     </Reference>
     <Reference Include="Telerik.XamarinForms.Common">
       <HintPath>C:\Program Files (x86)\Progress\Telerik UI for Xamarin R3 2019\Binaries\Android\Telerik.XamarinForms.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.XamarinForms.DataControls">
+      <HintPath>C:\Program Files (x86)\Progress\Telerik UI for Xamarin R3 2019\Binaries\Android\Telerik.XamarinForms.DataControls.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.XamarinForms.Input">
+      <HintPath>C:\Program Files (x86)\Progress\Telerik UI for Xamarin R3 2019\Binaries\Android\Telerik.XamarinForms.Input.dll</HintPath>
     </Reference>
     <Reference Include="Telerik.XamarinForms.Primitives">
       <HintPath>C:\Program Files (x86)\Progress\Telerik UI for Xamarin R3 2019\Binaries\Android\Telerik.XamarinForms.Primitives.dll</HintPath>
@@ -135,7 +150,7 @@
     <PackageReference Include="Xamarin.Essentials">
       <Version>1.3.1</Version>
     </PackageReference>
-    <PackageReference Include="Xamarin.Forms" Version="4.3.0.947036" />
+    <PackageReference Include="Xamarin.Forms" Version="4.3.0.991211" />
     <PackageReference Include="Xamarin.Android.Support.Design" Version="28.0.0.3" />
     <PackageReference Include="Xamarin.Android.Support.v7.AppCompat" Version="28.0.0.3" />
     <PackageReference Include="Xamarin.Android.Support.v4" Version="28.0.0.3" />

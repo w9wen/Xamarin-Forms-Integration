@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="XamlInteg.Views.TelerikHomePage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:button="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+    xmlns:prism="http://prismlibrary.com"
+    Title="Telerik"
+    prism:ViewModelLocator.AutowireViewModel="True">
+
+    <StackLayout>
+        <button:SfButton Command="{prism:NavigateTo 'RadAutoCompletePage'}" Text="AutoComplete" />
+    </StackLayout>
+</ContentPage>
