@@ -100,57 +100,57 @@
       <Version>1.68.1</Version>
     </PackageReference>
     <PackageReference Include="Syncfusion.Licensing">
-      <Version>17.3.0.29</Version>
+      <Version>17.3.0.34</Version>
     </PackageReference>
     <PackageReference Include="Syncfusion.Xamarin.Buttons">
-      <Version>17.3.0.29</Version>
+      <Version>17.3.0.34</Version>
     </PackageReference>
     <PackageReference Include="Syncfusion.Xamarin.Core">
-      <Version>17.3.0.29</Version>
+      <Version>17.3.0.34</Version>
     </PackageReference>
     <PackageReference Include="Syncfusion.Xamarin.DataSource">
-      <Version>17.3.0.29</Version>
+      <Version>17.3.0.34</Version>
     </PackageReference>
     <PackageReference Include="Syncfusion.Xamarin.GridCommon">
-      <Version>17.3.0.29</Version>
+      <Version>17.3.0.34</Version>
     </PackageReference>
     <PackageReference Include="Syncfusion.Xamarin.SfBadgeView">
-      <Version>17.3.0.29</Version>
+      <Version>17.3.0.34</Version>
     </PackageReference>
     <PackageReference Include="Syncfusion.Xamarin.SfComboBox">
-      <Version>17.3.0.29</Version>
+      <Version>17.3.0.34</Version>
     </PackageReference>
     <PackageReference Include="Syncfusion.Xamarin.SfDataGrid">
-      <Version>17.3.0.29</Version>
+      <Version>17.3.0.34</Version>
     </PackageReference>
     <PackageReference Include="Syncfusion.Xamarin.SfListView">
-      <Version>17.3.0.29</Version>
+      <Version>17.3.0.34</Version>
     </PackageReference>
     <PackageReference Include="Syncfusion.Xamarin.SfMaskedEdit">
-      <Version>17.3.0.29</Version>
+      <Version>17.3.0.34</Version>
     </PackageReference>
     <PackageReference Include="Syncfusion.Xamarin.SfParallaxView">
-      <Version>17.3.0.29</Version>
+      <Version>17.3.0.34</Version>
     </PackageReference>
     <PackageReference Include="Syncfusion.Xamarin.SfPdfViewer">
-      <Version>17.3.0.29</Version>
+      <Version>17.3.0.34</Version>
     </PackageReference>
     <PackageReference Include="Syncfusion.Xamarin.SfPicker">
-      <Version>17.3.0.29</Version>
+      <Version>17.3.0.34</Version>
     </PackageReference>
     <PackageReference Include="Syncfusion.Xamarin.SfPopupLayout">
-      <Version>17.3.0.29</Version>
+      <Version>17.3.0.34</Version>
     </PackageReference>
     <PackageReference Include="Syncfusion.Xamarin.SfPullToRefresh">
-      <Version>17.3.0.29</Version>
+      <Version>17.3.0.34</Version>
     </PackageReference>
     <PackageReference Include="Syncfusion.Xamarin.SfTabView">
-      <Version>17.3.0.29</Version>
+      <Version>17.3.0.34</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.Essentials">
       <Version>1.3.1</Version>
     </PackageReference>
-    <PackageReference Include="Xamarin.Forms" Version="4.3.0.991211" />
+    <PackageReference Include="Xamarin.Forms" Version="4.4.0.991265" />
     <PackageReference Include="Xamarin.Android.Support.Design" Version="28.0.0.3" />
     <PackageReference Include="Xamarin.Android.Support.v7.AppCompat" Version="28.0.0.3" />
     <PackageReference Include="Xamarin.Android.Support.v4" Version="28.0.0.3" />
