@@ -4,8 +4,7 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:button="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
-    xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
-    xmlns:prismNavi="clr-namespace:Prism.Navigation.Xaml;assembly=Prism.Forms"
+    xmlns:prism="http://prismlibrary.com"
     Title="{Binding Title}"
     prism:ViewModelLocator.AutowireViewModel="True">
     <StackLayout>
@@ -14,9 +13,10 @@
             CommandParameter="property_changed"
             Text="Prism Property Changed" />
         <button:SfButton
-            Command="{prismNavi:NavigateTo 'PrismLifecyclePage'}"
+            Command="{prism:NavigateTo 'PrismLifecyclePage'}"
             CommandParameter="TEST"
             Text="Prism Lifecycle" />
-        <button:SfButton Command="{prismNavi:NavigateTo 'PrismEventToCommandBehaviorPage'}" Text="EventToCommandBehavior" />
+        <button:SfButton Command="{prism:NavigateTo 'PrismEventToCommandBehaviorPage'}" Text="EventToCommandBehavior" />
+        <button:SfButton Command="{prism:NavigateTo 'PrismTabbedPage'}" Text="Tabbed Page" />
     </StackLayout>
 </ContentPage>

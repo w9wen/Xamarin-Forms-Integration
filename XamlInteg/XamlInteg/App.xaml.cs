@@ -70,6 +70,11 @@ namespace XamlInteg
             containerRegistry.RegisterForNavigation<RadPopupPage, RadPopupPageViewModel>();
             containerRegistry.RegisterForNavigation<RadAutoCompletePage, RadAutoCompletePageViewModel>();
             containerRegistry.RegisterForNavigation<TelerikHomePage, TelerikHomePageViewModel>();
+            containerRegistry.RegisterForNavigation<PrismTabbedPage, PrismTabbedPageViewModel>();
+            containerRegistry.RegisterForNavigation<PrismNavigationAPage, PrismNavigationAPageViewModel>();
+            containerRegistry.RegisterForNavigation<PrismNavigationBPage, PrismNavigationBPageViewModel>();
+            containerRegistry.RegisterForNavigation<PrismContentAPage, PrismContentAPageViewModel>();
+            containerRegistry.RegisterForNavigation<PrismContentBPage, PrismContentBPageViewModel>();
         }
     }
 }
