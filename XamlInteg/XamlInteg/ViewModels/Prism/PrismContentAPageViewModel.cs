@@ -25,7 +25,7 @@ namespace XamlInteg.ViewModels
 
         public bool CanNavigate(INavigationParameters parameters)
         {
-            return true;
+            return false;
         }
     }
 }

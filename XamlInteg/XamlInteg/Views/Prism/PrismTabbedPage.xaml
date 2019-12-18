@@ -1,12 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <TabbedPage
     x:Class="XamlInteg.Views.PrismTabbedPage"
-    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns="http://xamarin.com/schemas/2014/forms" x:Name="TabbedPage_Prism"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:XamlInteg.Views"
     xmlns:prism="http://prismlibrary.com"
     prism:ViewModelLocator.AutowireViewModel="True"
     NavigationPage.HasNavigationBar="False">
+    <TabbedPage.Behaviors>
+        <prism:EventToCommandBehavior EventName="CurrentPageChanged" />
+    </TabbedPage.Behaviors>
     <TabbedPage.Children>
         <NavigationPage Title="Content A">
             <x:Arguments>
