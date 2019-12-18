@@ -4,8 +4,7 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:button="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
-    xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
-    xmlns:prismNavi="clr-namespace:Prism.Navigation.Xaml;assembly=Prism.Forms"
+    xmlns:prism="http://prismlibrary.com"
     prism:ViewModelLocator.AutowireViewModel="True">
     <StackLayout>
         <Button
@@ -20,8 +19,9 @@
             Command="{Binding ButtonCommand}"
             CommandParameter="AppInfo"
             Text="App Info" />
-        <button:SfButton Command="{prismNavi:NavigateTo 'EssentialSecureStoragePage'}" Text="Secure Storage" />
-        <button:SfButton Command="{prismNavi:NavigateTo 'EssentialMainThreadPage'}" Text="Main Thread" />
-        <button:SfButton Command="{prismNavi:NavigateTo 'EssentialFileSystemHelperPage'}" Text="File System Helpers" />
+        <button:SfButton Command="{prism:NavigateTo 'EssentialSecureStoragePage'}" Text="Secure Storage" />
+        <button:SfButton Command="{prism:NavigateTo 'EssentialMainThreadPage'}" Text="Main Thread" />
+        <button:SfButton Command="{prism:NavigateTo 'EssentialFileSystemHelperPage'}" Text="File System Helpers" />
+        <button:SfButton Command="{prism:NavigateTo 'EssentialFlashlightPage'}" Text="Flashlight" />
     </StackLayout>
 </ContentPage>
