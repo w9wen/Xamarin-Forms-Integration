@@ -27,7 +27,7 @@ namespace XamlInteg
 
         protected override async void OnInitialized()
         {
-            Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("MTIyMTE1QDMxMzcyZTMyMmUzMFpjSHNJMStscldrUWs0RWlqT1p0TkV2MVdJdDhKUGM2NUxESVVQNGdHbUE9");
+            Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("MTg0MjA5QDMxMzcyZTM0MmUzMFBOZTVTZndoeFBJY1hKNGhwcys4SHo5Z3A0QTNkcGtYY2gvSi9YcTc3aVU9");
             InitializeComponent();
 
             await NavigationService.NavigateAsync("NavigationPage/MainPage");
