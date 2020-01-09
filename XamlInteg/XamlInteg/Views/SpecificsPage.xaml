@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="XamlInteg.Views.SpecificsPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:converters="clr-namespace:XamlInteg.Converters"
+    xmlns:prism="http://prismlibrary.com"
+    prism:ViewModelLocator.AutowireViewModel="True">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <converters:StringSplitConverter x:Key="stringSplit" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout>
+            <Label TextType="Html">
+
+                <![CDATA[
+
+            <p style="font-size:xx-large;">你已經被開除了!!!</p>
+            <p><span style="font-size:x-large;">你已經被開除了!!!</span></p>
+            <p><span style="font-size:large;">你已經被開除了!!!</span></p>
+            <p><span style="font-size:medium;">你已經被開除了!!!</span></p>
+            <p><span style="font-size:small;">你已經被開除了!!!</span></p>
+            <p><span style="font-size:x-small;">你已經被開除了!!!</span></p>
+            <p><span style="font-size:xx-small;">你已經被開除了!!!</span></p>
+            <p><strong>你已經被開除了!!!</strong></p>
+
+            ]]>
+            </Label>
+
+            <Label TextType="Html">
+
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span
+                            FontAttributes="Bold"
+                            Text="Red Bold, "
+                            TextColor="Red" />
+                        <Span Style="{DynamicResource BodyStyle}" Text="default, ">
+                            <Span.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding TapCommand}" />
+                            </Span.GestureRecognizers>
+                        </Span>
+                        <Span
+                            FontAttributes="Italic"
+                            FontSize="Small"
+                            Text="italic small." />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Label Text="{Binding FormatTargetItem, Converter={StaticResource Key=stringSplit}, ConverterParameter=1}" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

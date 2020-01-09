@@ -10,5 +10,6 @@
 
     <StackLayout>
         <button:SfButton Command="{prism:NavigateTo 'RadAutoCompletePage'}" Text="AutoComplete" />
+        <button:SfButton Command="{prism:NavigateTo 'RadPopupPage'}" Text="Popup" />
     </StackLayout>
 </ContentPage>

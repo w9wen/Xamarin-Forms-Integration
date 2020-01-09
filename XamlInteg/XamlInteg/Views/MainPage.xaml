@@ -4,11 +4,11 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:button="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
-    xmlns:prismNavi="clr-namespace:Prism.Navigation.Xaml;assembly=Prism.Forms"
+    xmlns:prism="http://prismlibrary.com"
     Title="{Binding Title}">
 
     <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
-        <button:SfButton Command="{prismNavi:NavigateTo 'ControlsHomePage'}" Text="Xamarin.Forms Controls" />
+        <button:SfButton Command="{prism:NavigateTo 'ControlsHomePage'}" Text="Xamarin.Forms Controls" />
         <Button
             Command="{Binding ButtonCommand}"
             CommandParameter="prism"
@@ -25,13 +25,14 @@
             Command="{Binding ButtonCommand}"
             CommandParameter="Syncfusion"
             Text="Syncfusion" />
-        <button:SfButton Command="{prismNavi:NavigateTo 'PluginsHomePage'}" Text="PLUGIN" />
+        <button:SfButton Command="{prism:NavigateTo 'PluginsHomePage'}" Text="PLUGIN" />
         <Button
             Command="{Binding ButtonCommand}"
             CommandParameter="StickyScroll"
             Text="Sticky using Scroll View" />
 
-        <button:SfButton Command="{prismNavi:NavigateTo 'CustomControlsHomePage'}" Text="Custom Controls" />
-        <button:SfButton Command="{prismNavi:NavigateTo 'TelerikHomePage'}" Text="Telerik" />
+        <button:SfButton Command="{prism:NavigateTo 'CustomControlsHomePage'}" Text="Custom Controls" />
+        <button:SfButton Command="{prism:NavigateTo 'TelerikHomePage'}" Text="Telerik" />
+        <button:SfButton Command="{prism:NavigateTo 'SpecificsPage'}" Text="Specifics" />
     </StackLayout>
 </ContentPage>

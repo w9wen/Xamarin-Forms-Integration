@@ -76,6 +76,7 @@ namespace XamlInteg
             containerRegistry.RegisterForNavigation<PrismContentAPage, PrismContentAPageViewModel>();
             containerRegistry.RegisterForNavigation<PrismContentBPage, PrismContentBPageViewModel>();
             containerRegistry.RegisterForNavigation<EssentialFlashlightPage, EssentialFlashlightPageViewModel>();
+            containerRegistry.RegisterForNavigation<SpecificsPage, SpecificsPageViewModel>();
         }
     }
 }
