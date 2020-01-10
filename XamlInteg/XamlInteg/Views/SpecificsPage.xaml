@@ -51,6 +51,16 @@
             </Label>
 
             <Label Text="{Binding FormatTargetItem, Converter={StaticResource Key=stringSplit}, ConverterParameter=1}" />
+
+            <Entry Text="{Binding ContentUrl}" />
+
+            <Image Source="{Binding ContentUrl}" />
+
+            <WebView
+                Margin="20,10"
+                HeightRequest="1000"
+                Source="{Binding ContentUrl}"
+                WidthRequest="1000" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
