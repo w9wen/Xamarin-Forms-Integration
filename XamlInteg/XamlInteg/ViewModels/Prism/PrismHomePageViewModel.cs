@@ -1,22 +1,37 @@
 ﻿using Prism.Commands;
 using Prism.Mvvm;
 using Prism.Navigation;
+using Prism.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using XamlInteg.Views;
 
 namespace XamlInteg.ViewModels
 {
     public class PrismHomePageViewModel : ViewModelBase
     {
-        public DelegateCommand<string> ButtonCommand { get; private set; }
+        private IPageDialogService pageDialogService;
 
-        public PrismHomePageViewModel(INavigationService navigationService)
+        public DelegateCommand<string> ButtonCommand
+        { get; private set; }
+
+        public DelegateCommand PrismDisplayAlertCommad { get; }
+
+        public PrismHomePageViewModel(INavigationService navigationService, IPageDialogService pageDialogService)
             : base(navigationService)
         {
             Title = "Prism Library";
+            this.pageDialogService = pageDialogService;
+
             ButtonCommand = new DelegateCommand<string>(ButtonExecute);
+            this.PrismDisplayAlertCommad = new DelegateCommand(PrismDisplayAlertExecute);
+        }
+
+        private void PrismDisplayAlertExecute()
+        {
+            this.pageDialogService.DisplayAlertAsync("Title", "Message", "確定").ConfigureAwait(true);
         }
 
         private void ButtonExecute(string subject)
