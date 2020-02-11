@@ -3,24 +3,13 @@
     x:Class="XamlInteg.Views.WebViewPage"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+    xmlns:prism="http://prismlibrary.com"
     prism:ViewModelLocator.AutowireViewModel="True">
 
-    <StackLayout>
-        <StackLayout Orientation="Horizontal">
-            <Button
-                Clicked="Button_Clicked"
-                HorizontalOptions="StartAndExpand"
-                Text="Back" />
-            <Button
-                Clicked="Button_Clicked"
-                HorizontalOptions="CenterAndExpand"
-                Text="Reload" />
-            <Button
-                Clicked="Button_Clicked"
-                HorizontalOptions="EndAndExpand"
-                Text="Forward" />
-        </StackLayout>
-        <WebView x:Name="WebView_Control" />
-    </StackLayout>
+    <Grid>
+        <WebView
+            HeightRequest="1000"
+            Source="{Binding WebViewUrl}"
+            WidthRequest="1000" />
+    </Grid>
 </ContentPage>
