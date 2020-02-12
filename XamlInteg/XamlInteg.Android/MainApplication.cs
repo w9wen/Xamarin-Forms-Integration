@@ -20,7 +20,7 @@ namespace XamlInteg.Droid
             base.OnCreate();
             RegisterActivityLifecycleCallbacks(this);
 
-            CrossFingerprint.SetCurrentActivityResolver(() => CrossCurrentActivity.Current.Activity);
+            //CrossFingerprint.SetCurrentActivityResolver(() => CrossCurrentActivity.Current.Activity);
 
             // uncomment this line to use custom dialog
             //CrossFingerprint.SetDialogFragmentType<MyCustomDialogFragment>();

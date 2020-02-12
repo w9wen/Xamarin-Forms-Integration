@@ -16,7 +16,7 @@ namespace XamlInteg.ViewModels
         {
             try
             {
-                this.WebViewUrl = new Uri(@"https://test.webrtc.org/");
+                this.WebViewUrl = new Uri(@"https://demo.shin-her.com.tw/tnvs/ICampus/");
             }
             catch (Exception ex)
             {
