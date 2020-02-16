@@ -1,4 +1,5 @@
 ﻿using Plugin.Fingerprint;
+using Plugin.Fingerprint.Abstractions;
 using Prism.Commands;
 using Prism.Mvvm;
 using Prism.Services;
@@ -83,7 +84,9 @@ namespace XamlInteg.ViewModels
 
                 if (isAvailable)
                 {
-                    var result = await CrossFingerprint.Current.AuthenticateAsync("請使用您的指紋進行識別");
+                    var authenticationConfig = new AuthenticationRequestConfiguration("title", "reason");
+
+                    var result = await CrossFingerprint.Current.AuthenticateAsync(authenticationConfig).ConfigureAwait(false);
                     if (result.Authenticated)
                     {
                         await _pageDialogService.DisplayAlertAsync("識別結果", "認證合法", "Ok");
