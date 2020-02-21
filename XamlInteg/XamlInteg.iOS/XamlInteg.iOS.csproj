@@ -240,6 +240,9 @@
     <PackageReference Include="Syncfusion.Xamarin.SfDataGrid">
       <Version>17.4.0.50</Version>
     </PackageReference>
+    <PackageReference Include="Syncfusion.Xamarin.SfGauge">
+      <Version>17.4.0.50</Version>
+    </PackageReference>
     <PackageReference Include="Syncfusion.Xamarin.SfListView">
       <Version>17.4.0.50</Version>
     </PackageReference>

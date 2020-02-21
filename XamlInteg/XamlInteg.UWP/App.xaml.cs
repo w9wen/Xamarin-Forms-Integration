@@ -1,3 +1,4 @@
+using Syncfusion.SfGauge.XForms.UWP;
 using Syncfusion.XForms.UWP.Border;
 using Syncfusion.SfPullToRefresh.XForms.UWP;
 using Syncfusion.SfPdfViewer.XForms.UWP;
@@ -67,6 +68,8 @@ namespace XamlInteg.UWP
                 rootFrame.NavigationFailed += OnNavigationFailed;
 
 List<Assembly> assembliesToInclude = new List<Assembly>();
+assembliesToInclude.Add(typeof(SfGaugeRenderer).GetTypeInfo().Assembly);
+assembliesToInclude.Add(typeof(SfDigitalGaugeRenderer).GetTypeInfo().Assembly);
 assembliesToInclude.Add(typeof(SfBorderRenderer).GetTypeInfo().Assembly);
 assembliesToInclude.Add(typeof(SfPullToRefreshRenderer).GetTypeInfo().Assembly);
 assembliesToInclude.Add(typeof(SfPdfDocumentViewRenderer).GetTypeInfo().Assembly);

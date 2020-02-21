@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="XamlInteg.Views.SfGaugePage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:gauge="clr-namespace:Syncfusion.SfGauge.XForms;assembly=Syncfusion.SfGauge.XForms"
+    xmlns:prism="http://prismlibrary.com"
+    prism:ViewModelLocator.AutowireViewModel="True">
+    <ContentPage.Content>
+        <gauge:SfCircularGauge Margin="10">
+            <gauge:SfCircularGauge.Headers>
+                <gauge:Header
+                    ForegroundColor="BlueViolet"
+                    Text="Monitor"
+                    TextSize="20" />
+            </gauge:SfCircularGauge.Headers>
+            <gauge:SfCircularGauge.Scales>
+                <gauge:Scale EndValue="100" StartValue="0">
+                    <gauge:Scale.Ranges>
+                        <gauge:Range
+                            EndValue="35"
+                            StartValue="0"
+                            Color="Green" />
+                        <gauge:Range
+                            EndValue="70"
+                            StartValue="35"
+                            Color="Orange" />
+                        <gauge:Range
+                            EndValue="100"
+                            StartValue="70"
+                            Color="Red" />
+                    </gauge:Scale.Ranges>
+                    <gauge:Scale.Pointers>
+                        <gauge:MarkerPointer Value="70" />
+                        <gauge:NeedlePointer Value="60" />
+                        <gauge:RangePointer Value="90" />
+                    </gauge:Scale.Pointers>
+                </gauge:Scale>
+            </gauge:SfCircularGauge.Scales>
+        </gauge:SfCircularGauge>
+    </ContentPage.Content>
+</ContentPage>

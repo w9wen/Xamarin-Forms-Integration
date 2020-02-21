@@ -48,6 +48,7 @@
     <PackageReference Include="Syncfusion.Xamarin.SfBadgeView" Version="17.4.0.50" />
     <PackageReference Include="Syncfusion.Xamarin.SfComboBox" Version="17.4.0.50" />
     <PackageReference Include="Syncfusion.Xamarin.SfDataGrid" Version="17.4.0.50" />
+    <PackageReference Include="Syncfusion.Xamarin.SfGauge" Version="17.4.0.50" />
     <PackageReference Include="Syncfusion.Xamarin.SfListView" Version="17.4.0.50" />
     <PackageReference Include="Syncfusion.Xamarin.SfMaskedEdit" Version="17.4.0.50" />
     <PackageReference Include="Syncfusion.Xamarin.SfParallaxView" Version="17.4.0.50" />
@@ -139,6 +140,9 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\Prism\PrismLifecyclePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Syncfusion\SfGaugePage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\SpecificsPage.xaml">
