@@ -17,6 +17,7 @@ using Foundation;
 using Prism;
 using Prism.Ioc;
 using UIKit;
+using Syncfusion.SfAutoComplete.XForms.iOS;
 
 namespace XamlInteg.iOS
 {
@@ -36,6 +37,7 @@ namespace XamlInteg.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             global::Xamarin.Forms.Forms.Init();
+            SfAutoCompleteRenderer.Init();
             SfGaugeRenderer.Init();
             SfDigitalGaugeRenderer.Init();
             SfSwitchRenderer.Init();
@@ -55,6 +57,7 @@ namespace XamlInteg.iOS
             SfCheckBoxRenderer.Init();
 
             SfPopupLayoutRenderer.Init();
+
             LoadApplication(new App(new iOSInitializer()));
 
             return base.FinishedLaunching(app, options);

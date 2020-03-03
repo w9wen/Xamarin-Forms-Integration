@@ -78,6 +78,7 @@ namespace XamlInteg
             containerRegistry.RegisterForNavigation<EssentialFlashlightPage, EssentialFlashlightPageViewModel>();
             containerRegistry.RegisterForNavigation<SpecificsPage, SpecificsPageViewModel>();
             containerRegistry.RegisterForNavigation<SfGaugePage, SfGaugePageViewModel>();
+            containerRegistry.RegisterForNavigation<SfAutoCompletePage, SfAutoCompletePageViewModel>();
         }
     }
 }

@@ -135,46 +135,49 @@
       <Version>1.68.1.1</Version>
     </PackageReference>
     <PackageReference Include="Syncfusion.Licensing">
-      <Version>17.4.0.51</Version>
+      <Version>17.4.0.53</Version>
     </PackageReference>
     <PackageReference Include="Syncfusion.Xamarin.Buttons">
-      <Version>17.4.0.51</Version>
+      <Version>17.4.0.53</Version>
     </PackageReference>
     <PackageReference Include="Syncfusion.Xamarin.Core">
-      <Version>17.4.0.51</Version>
+      <Version>17.4.0.53</Version>
+    </PackageReference>
+    <PackageReference Include="Syncfusion.Xamarin.SfAutoComplete">
+      <Version>17.4.0.53</Version>
     </PackageReference>
     <PackageReference Include="Syncfusion.Xamarin.SfBadgeView">
-      <Version>17.4.0.51</Version>
+      <Version>17.4.0.53</Version>
     </PackageReference>
     <PackageReference Include="Syncfusion.Xamarin.SfComboBox">
-      <Version>17.4.0.51</Version>
+      <Version>17.4.0.53</Version>
     </PackageReference>
     <PackageReference Include="Syncfusion.Xamarin.SfDataGrid">
-      <Version>17.4.0.51</Version>
+      <Version>17.4.0.53</Version>
     </PackageReference>
     <PackageReference Include="Syncfusion.Xamarin.SfGauge">
-      <Version>17.4.0.51</Version>
+      <Version>17.4.0.53</Version>
     </PackageReference>
     <PackageReference Include="Syncfusion.Xamarin.SfMaskedEdit">
-      <Version>17.4.0.51</Version>
+      <Version>17.4.0.53</Version>
     </PackageReference>
     <PackageReference Include="Syncfusion.Xamarin.SfParallaxView">
-      <Version>17.4.0.51</Version>
+      <Version>17.4.0.53</Version>
     </PackageReference>
     <PackageReference Include="Syncfusion.Xamarin.SfPdfViewer">
-      <Version>17.4.0.51</Version>
+      <Version>17.4.0.53</Version>
     </PackageReference>
     <PackageReference Include="Syncfusion.Xamarin.SfPicker">
-      <Version>17.4.0.51</Version>
+      <Version>17.4.0.53</Version>
     </PackageReference>
     <PackageReference Include="Syncfusion.Xamarin.SfPopupLayout">
-      <Version>17.4.0.51</Version>
+      <Version>17.4.0.53</Version>
     </PackageReference>
     <PackageReference Include="Syncfusion.Xamarin.SfPullToRefresh">
-      <Version>17.4.0.51</Version>
+      <Version>17.4.0.53</Version>
     </PackageReference>
     <PackageReference Include="Syncfusion.Xamarin.SfTabView">
-      <Version>17.4.0.51</Version>
+      <Version>17.4.0.53</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.Essentials">
       <Version>1.5.0</Version>

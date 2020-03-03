@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="XamlInteg.Views.SfAutoCompletePage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:ListCollection="clr-namespace:System.Collections.Generic;assembly=netstandard"
+    xmlns:autocomplete="clr-namespace:Syncfusion.SfAutoComplete.XForms;assembly=Syncfusion.SfAutoComplete.XForms"
+    xmlns:prism="http://prismlibrary.com"
+    prism:ViewModelLocator.AutowireViewModel="True">
+    <ContentPage.Content>
+        <StackLayout>
+            <autocomplete:SfAutoComplete x:Name="autocomplete" EnableSelectionIndicator="False">
+                <autocomplete:SfAutoComplete.AutoCompleteSource>
+                    <ListCollection:List x:TypeArguments="x:String">
+                        <x:String>India</x:String>
+                        <x:String>Uganda</x:String>
+                        <x:String>Ukraine</x:String>
+                        <x:String>Canada</x:String>
+                        <x:String>United Arab Emirates</x:String>
+                        <x:String>France</x:String>
+                        <x:String>United Kingdom</x:String>
+                        <x:String>China</x:String>
+                        <x:String>United States</x:String>
+                        <x:String>Japan</x:String>
+                        <x:String>Angola</x:String>
+                        <x:String>台灣</x:String>
+                        <x:String>美國</x:String>
+                        <x:String>日本</x:String>
+                        <x:String>安哥拉</x:String>
+                    </ListCollection:List>
+                </autocomplete:SfAutoComplete.AutoCompleteSource>
+            </autocomplete:SfAutoComplete>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

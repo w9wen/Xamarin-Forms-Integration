@@ -19,5 +19,6 @@
         <button:SfButton Command="{prism:NavigateTo 'SfPdfViewerPage'}" Text="PDF Viewer" />
         <button:SfButton Command="{prism:NavigateTo 'SfDataGridPage'}" Text="Data Grid" />
         <button:SfButton Command="{prism:NavigateTo 'SfGaugePage'}" Text="Gauge" />
+        <button:SfButton Command="{prism:NavigateTo 'SfAutoCompletePage'}" Text="Auto Complete" />
     </StackLayout>
 </ContentPage>
