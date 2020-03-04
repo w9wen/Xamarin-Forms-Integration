@@ -8,5 +8,9 @@
     Title="Telerik AutoComplete"
     prism:ViewModelLocator.AutowireViewModel="True">
 
-    <telerikInput:RadAutoCompleteView Watermark="Search here..." />
+    <telerikInput:RadAutoCompleteView
+        ItemsSource="{Binding Monkeys}"
+        ShowSuggestionView="True"
+        SuggestionViewHeight="100"
+        TextSearchPath="Name" />
 </ContentPage>
