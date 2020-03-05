@@ -1,6 +1,7 @@
 ﻿using Android.App;
 using Android.Content;
 using Android.Content.PM;
+using Android.Net;
 using Android.OS;
 using Android.Runtime;
 using Android.Webkit;
@@ -14,8 +15,10 @@ namespace XamlInteg.Droid
     [Activity(Label = "XamlInteg", Icon = "@mipmap/ic_launcher", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     {
-        public static IValueCallback mUploadMessage;
-        public static int FILECHOOSER_RESULTCODE = 1;
+        public IValueCallback FileUploadCallback { get; set; }
+        public Uri PhotoUriToUpload { get; set; }
+        public static readonly int FILECHOOSER_RESULTCODE = 1;
+        public static readonly int REQUEST_CAMERA_TEST = 8;
 
         protected override void OnCreate(Bundle bundle)
         {
@@ -42,7 +45,27 @@ namespace XamlInteg.Droid
 
         protected override void OnActivityResult(int requestCode, Result resultCode, Intent data)
         {
-            base.OnActivityResult(requestCode, resultCode, data);
+            if (FileUploadCallback == null)
+            {
+                return;
+            }
+
+            if (data != null && requestCode == FILECHOOSER_RESULTCODE)
+            {
+                FileUploadCallback.OnReceiveValue(WebChromeClient.FileChooserParams.ParseResult((int)resultCode, data));
+            }
+            else if (PhotoUriToUpload != null && requestCode == FILECHOOSER_RESULTCODE)
+            {
+                Intent cameraPhotoIntent = new Intent(Intent.ActionView, PhotoUriToUpload);
+                FileUploadCallback.OnReceiveValue(WebChromeClient.FileChooserParams.ParseResult((int)resultCode, cameraPhotoIntent));
+            }
+            else
+            {
+                FileUploadCallback.OnReceiveValue(null);
+            }
+
+            FileUploadCallback = null;
+            PhotoUriToUpload = null;
         }
     }
 
