@@ -96,7 +96,10 @@ namespace XamlInteg.Droid.Renderers
                             var fileProvider = Android.App.Application.Context.PackageName + ".fileprovider";
 
                             Android.Net.Uri photoUri =
-                                               FileProvider.GetUriForFile(_activity, fileProvider, photoFile);
+                                               FileProvider.GetUriForFile(_activity, Android.App.Application.Context.PackageName, photoFile);
+
+                            //var photoUri = Android.Net.Uri.FromFile(photoFile);
+
                             cameraIntent.PutExtra(MediaStore.ExtraOutput, photoUri);
                             _activity.PhotoUriToUpload = photoUri;
                         }
@@ -117,8 +120,8 @@ namespace XamlInteg.Droid.Renderers
                 IParcelable[] intentArray = { cameraIntent };
                 chooser.PutExtra(Intent.ExtraInitialIntents, intentArray);
 
-                //_activity.StartActivityForResult(chooser, MainActivity.FILECHOOSER_RESULTCODE);
-                _activity.StartActivityForResult(cameraIntent, MainActivity.REQUEST_CAMERA_TEST);
+                _activity.StartActivityForResult(chooser, MainActivity.REQUEST_CAMERA_TEST);
+                //_activity.StartActivityForResult(cameraIntent, MainActivity.FILECHOOSER_RESULTCODE);
             }
 
             private File CreateTemporaryImageFile()
@@ -138,7 +141,8 @@ namespace XamlInteg.Droid.Renderers
 
                 string timeStamp = DateTime.Now.ToString("yyyyMMddHHmmss");
                 string imageFileName = "JPEG_" + timeStamp + "_";
-                File storageDir = _activity.GetExternalFilesDir(Android.OS.Environment.DirectoryPictures);
+                //File storageDir = _activity.GetExternalFilesDir(Android.OS.Environment.DirectoryPictures);
+                File storageDir = Android.OS.Environment.GetExternalStoragePublicDirectory(Android.OS.Environment.DirectoryPictures);
                 File image = File.CreateTempFile(imageFileName, ".jpg", storageDir);
                 return image;
             }

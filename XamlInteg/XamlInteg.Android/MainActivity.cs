@@ -54,7 +54,7 @@ namespace XamlInteg.Droid
             {
                 FileUploadCallback.OnReceiveValue(WebChromeClient.FileChooserParams.ParseResult((int)resultCode, data));
             }
-            else if (PhotoUriToUpload != null && requestCode == FILECHOOSER_RESULTCODE)
+            else if (PhotoUriToUpload != null && requestCode == REQUEST_CAMERA_TEST)
             {
                 Intent cameraPhotoIntent = new Intent(Intent.ActionView, PhotoUriToUpload);
                 FileUploadCallback.OnReceiveValue(WebChromeClient.FileChooserParams.ParseResult((int)resultCode, cameraPhotoIntent));
