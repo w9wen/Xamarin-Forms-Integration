@@ -120,7 +120,7 @@ namespace XamlInteg.Droid.Renderers
                 IParcelable[] intentArray = { cameraIntent };
                 chooser.PutExtra(Intent.ExtraInitialIntents, intentArray);
 
-                _activity.StartActivityForResult(chooser, MainActivity.REQUEST_CAMERA_TEST);
+                _activity.StartActivityForResult(chooser, MainActivity.FILECHOOSER_RESULTCODE);
                 //_activity.StartActivityForResult(cameraIntent, MainActivity.FILECHOOSER_RESULTCODE);
             }
 

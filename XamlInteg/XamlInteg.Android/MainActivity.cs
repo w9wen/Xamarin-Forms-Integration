@@ -50,12 +50,14 @@ namespace XamlInteg.Droid
                 return;
             }
 
-            if (data != null && requestCode == FILECHOOSER_RESULTCODE)
+            if (data != null && !string.IsNullOrEmpty(data.DataString) && requestCode == FILECHOOSER_RESULTCODE)
             {
+                //// File
                 FileUploadCallback.OnReceiveValue(WebChromeClient.FileChooserParams.ParseResult((int)resultCode, data));
             }
-            else if (PhotoUriToUpload != null && requestCode == REQUEST_CAMERA_TEST)
+            else if (PhotoUriToUpload != null && requestCode == FILECHOOSER_RESULTCODE)
             {
+                //// Camera
                 Intent cameraPhotoIntent = new Intent(Intent.ActionView, PhotoUriToUpload);
                 FileUploadCallback.OnReceiveValue(WebChromeClient.FileChooserParams.ParseResult((int)resultCode, cameraPhotoIntent));
             }
