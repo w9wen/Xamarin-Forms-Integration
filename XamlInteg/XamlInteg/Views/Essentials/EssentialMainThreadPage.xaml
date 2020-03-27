@@ -6,8 +6,56 @@
     xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
     prism:ViewModelLocator.AutowireViewModel="True">
     <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
-        <Label x:Name="Label_Countdown" Text="{Binding Countdown}" />
-        <Button Command="{Binding StartCommand}" Text="Start" />
+        <Grid Margin="25">
+            <Label
+                Grid.Row="0"
+                Grid.Column="0"
+                HorizontalOptions="Center"
+                Text="開始時間" />
+            <Label
+                Grid.Row="1"
+                Grid.Column="0"
+                HorizontalOptions="Center"
+                Text="現在時間" />
+            <Label
+                Grid.Row="2"
+                Grid.Column="0"
+                HorizontalOptions="Center"
+                Text="已執行時間" />
+            <Label
+                Grid.Row="3"
+                Grid.Column="0"
+                HorizontalOptions="Center"
+                Text="計數" />
+            <Label
+                Grid.Row="0"
+                Grid.Column="1"
+                HorizontalOptions="Start"
+                Text="{Binding StartDateTime, StringFormat='{0:yyyy/MM/dd HH:mm:ss}'}" />
+            <Label
+                Grid.Row="1"
+                Grid.Column="1"
+                HorizontalOptions="Start"
+                Text="{Binding NowDateTime, StringFormat='{0:yyyy/MM/dd HH:mm:ss}'}" />
+            <Label
+                Grid.Row="2"
+                Grid.Column="1"
+                HorizontalOptions="Start"
+                Text="{Binding RunTime}" />
+            <Label
+                Grid.Row="3"
+                Grid.Column="1"
+                HorizontalOptions="Start"
+                Text="{Binding Countdown}" />
+        </Grid>
+        <Button
+            Command="{Binding StartCommand}"
+            CommandParameter="true"
+            Text="Start" />
+        <Button
+            Command="{Binding StartCommand}"
+            CommandParameter="false"
+            Text="Stop" />
         <ActivityIndicator x:Name="ActivityIndicator_IsBusy" IsRunning="{Binding IsBusy}" />
     </StackLayout>
 </ContentPage>
