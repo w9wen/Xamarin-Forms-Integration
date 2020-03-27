@@ -1,3 +1,4 @@
+using Syncfusion.SfImageEditor.XForms.iOS;
 using Syncfusion.SfGauge.XForms.iOS;
 using Syncfusion.SfPullToRefresh.XForms.iOS;
 using Syncfusion.SfPdfViewer.XForms.iOS;
@@ -36,7 +37,8 @@ namespace XamlInteg.iOS
         //
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
-            global::Xamarin.Forms.Forms.Init();
+global::Xamarin.Forms.Forms.Init();
+SfImageEditorRenderer.Init();
             SfAutoCompleteRenderer.Init();
             SfGaugeRenderer.Init();
             SfDigitalGaugeRenderer.Init();

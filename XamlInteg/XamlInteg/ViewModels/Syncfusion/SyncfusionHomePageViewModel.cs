@@ -1,6 +1,7 @@
 ﻿using Prism.Commands;
 using Prism.Mvvm;
 using Prism.Navigation;
+using Prism.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,8 +12,9 @@ namespace XamlInteg.ViewModels
     public class SyncfusionHomePageViewModel : ViewModelBase
     {
         public DelegateCommand<string> ButtonCommand { get; }
-        public SyncfusionHomePageViewModel(INavigationService navagaionService)
-            :base(navagaionService)
+
+        public SyncfusionHomePageViewModel(INavigationService navigationService, IPageDialogService pageDialogService)
+            : base(navigationService, pageDialogService)
         {
             ButtonCommand = new DelegateCommand<string>(ButtonExcecute);
         }
@@ -24,6 +26,7 @@ namespace XamlInteg.ViewModels
                 case "ListView":
                     NavigationService.NavigateAsync(nameof(SyncListViewPage));
                     break;
+
                 default:
                     break;
             }

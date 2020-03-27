@@ -4,10 +4,10 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:button="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
-    xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
-    xmlns:prismNavi="clr-namespace:Prism.Navigation.Xaml;assembly=Prism.Forms"
+    xmlns:prism="http://prismlibrary.com"
     prism:ViewModelLocator.AutowireViewModel="True">
     <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
-        <button:SfButton Command="{prismNavi:NavigateTo 'FingerprintPage'}" Text="Fingerprint" />
+        <button:SfButton Command="{prism:NavigateTo 'FingerprintPage'}" Text="Fingerprint" />
+        <button:SfButton Command="{prism:NavigateTo 'PluginMediaPage'}" Text="Midia Plugin" />
     </StackLayout>
 </ContentPage>

@@ -1,6 +1,7 @@
 ﻿using Prism.Commands;
 using Prism.Mvvm;
 using Prism.Navigation;
+using Prism.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,10 +11,10 @@ namespace XamlInteg.ViewModels
 {
     public class EssentialsHomePageViewModel : ViewModelBase
     {
+        public DelegateCommand<string> ButtonCommand { get; private set; }
 
-       public DelegateCommand<string> ButtonCommand { get; private set; }
-        public EssentialsHomePageViewModel(INavigationService navigationService) 
-            : base(navigationService)
+        public EssentialsHomePageViewModel(INavigationService navigationService, IPageDialogService pageDialogService)
+            : base(navigationService, pageDialogService)
         {
             Title = "Xamarin Essentials";
             ButtonCommand = new DelegateCommand<string>(ButtonExecute);
@@ -26,16 +27,18 @@ namespace XamlInteg.ViewModels
                 case "Connectivity":
                     NavigationService.NavigateAsync(nameof(EssentialConnectivityPage));
                     break;
+
                 case "DeviceInfo":
                     NavigationService.NavigateAsync(nameof(EssentialDeviceInfoPage));
                     break;
+
                 case "AppInfo":
                     NavigationService.NavigateAsync(nameof(EssentialAppInfoPage));
                     break;
+
                 default:
                     break;
             }
         }
-
     }
 }

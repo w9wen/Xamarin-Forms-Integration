@@ -1,4 +1,5 @@
 ﻿using Prism.Navigation;
+using Prism.Services;
 
 namespace XamlInteg.ViewModels
 {
@@ -6,8 +7,8 @@ namespace XamlInteg.ViewModels
     {
         #region Constructor
 
-        public PrismLifecyclePageViewModel(INavigationService navigationService)
-            : base(navigationService)
+        public PrismLifecyclePageViewModel(INavigationService navigationService, IPageDialogService pageDialogService)
+            : base(navigationService, pageDialogService)
         {
         }
 

@@ -1,11 +1,14 @@
 ﻿using Prism.Mvvm;
 using Prism.Navigation;
+using Prism.Services;
 
 namespace XamlInteg.ViewModels
 {
     public class ViewModelBase : BindableBase, INavigationAware, IDestructible
     {
-        protected INavigationService NavigationService { get; private set; }
+        protected INavigationService NavigationService { get; }
+
+        protected IPageDialogService PageDialogService { get; }
 
         private string _title;
 
@@ -23,9 +26,10 @@ namespace XamlInteg.ViewModels
             set { SetProperty(ref _isBusy, value); }
         }
 
-        public ViewModelBase(INavigationService navigationService)
+        public ViewModelBase(INavigationService navigationService, IPageDialogService pageDialogService)
         {
             NavigationService = navigationService;
+            PageDialogService = pageDialogService;
         }
 
         public virtual void OnNavigatedFrom(INavigationParameters parameters)

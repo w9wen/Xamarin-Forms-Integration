@@ -5,6 +5,7 @@ using Android.Net;
 using Android.OS;
 using Android.Runtime;
 using Android.Webkit;
+using Plugin.CurrentActivity;
 using Plugin.Permissions;
 using Prism;
 using Prism.Ioc;
@@ -26,6 +27,7 @@ namespace XamlInteg.Droid
             ToolbarResource = Resource.Layout.Toolbar;
 
             base.OnCreate(bundle);
+            CrossCurrentActivity.Current.Init(this, bundle);
 
             Xamarin.Essentials.Platform.Init(this, bundle);
 

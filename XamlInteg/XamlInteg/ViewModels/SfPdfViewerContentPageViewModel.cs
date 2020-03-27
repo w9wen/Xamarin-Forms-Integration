@@ -1,6 +1,7 @@
 ﻿using Prism.Commands;
 using Prism.Mvvm;
 using Prism.Navigation;
+using Prism.Services;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -26,8 +27,8 @@ namespace XamlInteg.ViewModels
 
         #region Constructor
 
-        public SfPdfViewerContentPageViewModel(INavigationService navigationService)
-            : base(navigationService)
+        public SfPdfViewerContentPageViewModel(INavigationService navigationService, IPageDialogService pageDialogService)
+            : base(navigationService, pageDialogService)
         {
         }
 

@@ -1,5 +1,6 @@
 ﻿using Prism.Commands;
 using Prism.Navigation;
+using Prism.Services;
 using System.Threading.Tasks;
 
 namespace XamlInteg.ViewModels
@@ -26,8 +27,8 @@ namespace XamlInteg.ViewModels
 
         #region Constructor
 
-        public EssentialMainThreadPageViewModel(INavigationService navigationService)
-            : base(navigationService)
+        public EssentialMainThreadPageViewModel(INavigationService navigationService, IPageDialogService pageDialogService)
+            : base(navigationService, pageDialogService)
         {
             StartCommand = new DelegateCommand(StartExecute);
         }

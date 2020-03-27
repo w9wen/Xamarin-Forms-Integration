@@ -20,7 +20,7 @@ namespace XamlInteg.ViewModels
         public DelegateCommand PrismDisplayAlertCommad { get; }
 
         public PrismHomePageViewModel(INavigationService navigationService, IPageDialogService pageDialogService)
-            : base(navigationService)
+            : base(navigationService, pageDialogService)
         {
             Title = "Prism Library";
             this.pageDialogService = pageDialogService;

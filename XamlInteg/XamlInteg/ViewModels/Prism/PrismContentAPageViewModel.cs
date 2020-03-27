@@ -2,6 +2,7 @@
 using Prism.Mvvm;
 using Prism.Navigation;
 using Prism.Navigation.TabbedPages;
+using Prism.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,8 +13,8 @@ namespace XamlInteg.ViewModels
     {
         public DelegateCommand SelectTabCommand { get; }
 
-        public PrismContentAPageViewModel(INavigationService navigationService)
-            : base(navigationService)
+        public PrismContentAPageViewModel(INavigationService navigationService, IPageDialogService pageDialogService)
+            : base(navigationService, pageDialogService)
         {
             SelectTabCommand = new DelegateCommand(SelectTabExecute);
         }

@@ -79,6 +79,7 @@ namespace XamlInteg
             containerRegistry.RegisterForNavigation<SpecificsPage, SpecificsPageViewModel>();
             containerRegistry.RegisterForNavigation<SfGaugePage, SfGaugePageViewModel>();
             containerRegistry.RegisterForNavigation<SfAutoCompletePage, SfAutoCompletePageViewModel>();
+            containerRegistry.RegisterForNavigation<PluginMediaPage, PluginMediaPageViewModel>();
         }
     }
 }

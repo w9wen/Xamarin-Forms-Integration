@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json;
 using Prism.Commands;
 using Prism.Navigation;
+using Prism.Services;
 using System;
 using Xamarin.Essentials;
 
@@ -47,8 +48,8 @@ namespace XamlInteg.ViewModels
 
         #region Constructor
 
-        public EssentialSecureStoragePageViewModel(INavigationService navigationService)
-            : base(navigationService)
+        public EssentialSecureStoragePageViewModel(INavigationService navigationService, IPageDialogService pageDialogService)
+            : base(navigationService, pageDialogService)
         {
             SaveCommand = new DelegateCommand(SaveExecute);
         }

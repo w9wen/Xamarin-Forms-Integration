@@ -49,6 +49,14 @@
     <key>UILaunchStoryboardName</key>
     <string>LaunchScreen</string>
     <key>NSFaceIDUsageDescription</key>
-    <string>Need your face to unlock secrets!</string>
+    <string>需要您的注視鏡頭進行解鎖</string>
+    <key>NSCameraUsageDescription</key>
+    <string>App需存取您的相機</string>
+    <key>NSPhotoLibraryUsageDescription</key>
+    <string>App需存取您的照片.</string>
+    <key>NSMicrophoneUsageDescription</key>
+    <string>App需存取您的麥克風.</string>
+    <key>NSPhotoLibraryAddUsageDescription</key>
+    <string>App需存取您的相簿.</string>
   </dict>
 </plist>
