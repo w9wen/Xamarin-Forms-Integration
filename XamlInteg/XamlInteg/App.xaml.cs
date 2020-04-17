@@ -1,9 +1,9 @@
 ﻿using Prism;
 using Prism.Ioc;
-using XamlInteg.ViewModels;
-using XamlInteg.Views;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using XamlInteg.ViewModels;
+using XamlInteg.Views;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 
@@ -67,9 +67,6 @@ namespace XamlInteg
             containerRegistry.RegisterForNavigation<SfPickerPage, SfPickerPageViewModel>();
             containerRegistry.RegisterForNavigation<SfPdfViewerPage, SfPdfViewerPageViewModel>();
             containerRegistry.RegisterForNavigation<SfPdfViewerContentPage, SfPdfViewerContentPageViewModel>();
-            containerRegistry.RegisterForNavigation<RadPopupPage, RadPopupPageViewModel>();
-            containerRegistry.RegisterForNavigation<RadAutoCompletePage, RadAutoCompletePageViewModel>();
-            containerRegistry.RegisterForNavigation<TelerikHomePage, TelerikHomePageViewModel>();
             containerRegistry.RegisterForNavigation<PrismTabbedPage, PrismTabbedPageViewModel>();
             containerRegistry.RegisterForNavigation<PrismNavigationAPage, PrismNavigationAPageViewModel>();
             containerRegistry.RegisterForNavigation<PrismNavigationBPage, PrismNavigationBPageViewModel>();

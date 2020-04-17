@@ -27,6 +27,8 @@
     <MtouchLink>None</MtouchLink>
     <MtouchDebug>true</MtouchDebug>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <CodesignKey>Apple Development: Yu-Li Huang (NHJ2E7FNAE)</CodesignKey>
+    <CodesignProvision>VS: WildCard Development</CodesignProvision>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
     <DebugType>none</DebugType>
@@ -48,9 +50,10 @@
     <WarningLevel>4</WarningLevel>
     <ConsolePause>false</ConsolePause>
     <MtouchArch>ARM64</MtouchArch>
-    <CodesignKey>iPhone Developer</CodesignKey>
+    <CodesignKey>Apple Development: Yu-Li Huang (NHJ2E7FNAE)</CodesignKey>
     <MtouchDebug>true</MtouchDebug>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <CodesignProvision>VS: WildCard Development</CodesignProvision>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
     <DebugType>none</DebugType>
@@ -190,21 +193,6 @@
     <Reference Include="System" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
-    <Reference Include="Telerik.Xamarin.iOS">
-      <HintPath>C:\Program Files (x86)\Progress\Telerik UI for Xamarin R3 2019\Binaries\iOS\Telerik.Xamarin.iOS.dll</HintPath>
-    </Reference>
-    <Reference Include="Telerik.XamarinForms.Common">
-      <HintPath>C:\Program Files (x86)\Progress\Telerik UI for Xamarin R3 2019\Binaries\iOS\Telerik.XamarinForms.Common.dll</HintPath>
-    </Reference>
-    <Reference Include="Telerik.XamarinForms.DataControls">
-      <HintPath>C:\Program Files (x86)\Progress\Telerik UI for Xamarin R3 2019\Binaries\iOS\Telerik.XamarinForms.DataControls.dll</HintPath>
-    </Reference>
-    <Reference Include="Telerik.XamarinForms.Input">
-      <HintPath>C:\Program Files (x86)\Progress\Telerik UI for Xamarin R3 2019\Binaries\iOS\Telerik.XamarinForms.Input.dll</HintPath>
-    </Reference>
-    <Reference Include="Telerik.XamarinForms.Primitives">
-      <HintPath>C:\Program Files (x86)\Progress\Telerik UI for Xamarin R3 2019\Binaries\iOS\Telerik.XamarinForms.Primitives.dll</HintPath>
-    </Reference>
     <Reference Include="Xamarin.iOS" />
   </ItemGroup>
   <ItemGroup>
@@ -212,7 +200,7 @@
       <Version>2.1.1</Version>
     </PackageReference>
     <PackageReference Include="Plugin.Permissions">
-      <Version>3.0.0.12</Version>
+      <Version>6.0.1</Version>
     </PackageReference>
     <PackageReference Include="Shiny.Core">
       <Version>1.1.0.1473</Version>
@@ -221,69 +209,69 @@
       <Version>1.68.1.1</Version>
     </PackageReference>
     <PackageReference Include="Syncfusion.Licensing">
-      <Version>17.4.0.55</Version>
+      <Version>18.1.0.44</Version>
     </PackageReference>
     <PackageReference Include="Syncfusion.Xamarin.Buttons">
-      <Version>17.4.0.55</Version>
+      <Version>18.1.0.44</Version>
     </PackageReference>
     <PackageReference Include="Syncfusion.Xamarin.Core">
-      <Version>17.4.0.55</Version>
+      <Version>18.1.0.44</Version>
     </PackageReference>
     <PackageReference Include="Syncfusion.Xamarin.DataSource">
-      <Version>17.4.0.55</Version>
+      <Version>18.1.0.44</Version>
     </PackageReference>
     <PackageReference Include="Syncfusion.Xamarin.GridCommon">
-      <Version>17.4.0.55</Version>
+      <Version>18.1.0.44</Version>
     </PackageReference>
     <PackageReference Include="Syncfusion.Xamarin.SfAutoComplete">
-      <Version>17.4.0.55</Version>
+      <Version>18.1.0.44</Version>
     </PackageReference>
     <PackageReference Include="Syncfusion.Xamarin.SfBadgeView">
-      <Version>17.4.0.55</Version>
+      <Version>18.1.0.44</Version>
     </PackageReference>
     <PackageReference Include="Syncfusion.Xamarin.SfComboBox">
-      <Version>17.4.0.55</Version>
+      <Version>18.1.0.44</Version>
     </PackageReference>
     <PackageReference Include="Syncfusion.Xamarin.SfDataGrid">
-      <Version>17.4.0.55</Version>
+      <Version>18.1.0.44</Version>
     </PackageReference>
     <PackageReference Include="Syncfusion.Xamarin.SfGauge">
-      <Version>17.4.0.55</Version>
+      <Version>18.1.0.44</Version>
     </PackageReference>
     <PackageReference Include="Syncfusion.Xamarin.SfImageEditor">
-      <Version>17.4.0.55</Version>
+      <Version>18.1.0.44</Version>
     </PackageReference>
     <PackageReference Include="Syncfusion.Xamarin.SfListView">
-      <Version>17.4.0.55</Version>
+      <Version>18.1.0.44</Version>
     </PackageReference>
     <PackageReference Include="Syncfusion.Xamarin.SfMaskedEdit">
-      <Version>17.4.0.55</Version>
+      <Version>18.1.0.44</Version>
     </PackageReference>
     <PackageReference Include="Syncfusion.Xamarin.SfParallaxView">
-      <Version>17.4.0.55</Version>
+      <Version>18.1.0.44</Version>
     </PackageReference>
     <PackageReference Include="Syncfusion.Xamarin.SfPdfViewer">
-      <Version>17.4.0.55</Version>
+      <Version>18.1.0.44</Version>
     </PackageReference>
     <PackageReference Include="Syncfusion.Xamarin.SfPicker">
-      <Version>17.4.0.55</Version>
+      <Version>18.1.0.44</Version>
     </PackageReference>
     <PackageReference Include="Syncfusion.Xamarin.SfPopupLayout">
-      <Version>17.4.0.55</Version>
+      <Version>18.1.0.44</Version>
     </PackageReference>
     <PackageReference Include="Syncfusion.Xamarin.SfPullToRefresh">
-      <Version>17.4.0.55</Version>
+      <Version>18.1.0.44</Version>
     </PackageReference>
     <PackageReference Include="Syncfusion.Xamarin.SfTabView">
-      <Version>17.4.0.55</Version>
+      <Version>18.1.0.44</Version>
     </PackageReference>
     <PackageReference Include="Xam.Plugin.Media">
-      <Version>4.0.1.5</Version>
+      <Version>5.0.1</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.Essentials">
-      <Version>1.5.1</Version>
+      <Version>1.5.2</Version>
     </PackageReference>
-    <PackageReference Include="Xamarin.Forms" Version="4.5.0.495" />
+    <PackageReference Include="Xamarin.Forms" Version="4.5.0.617" />
     <PackageReference Include="Prism.DryIoc.Forms" Version="7.2.0.1422" />
   </ItemGroup>
   <ItemGroup>
