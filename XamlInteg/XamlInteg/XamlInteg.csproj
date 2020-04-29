@@ -32,7 +32,7 @@
 
   <ItemGroup>
     <PackageReference Include="LiveXAML" Version="2.1.73" />
-    <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.9.8">
+    <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="3.0.0">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
@@ -41,28 +41,28 @@
     <PackageReference Include="Plugin.Permissions" Version="6.0.1" />
     <PackageReference Include="Shiny.Core" Version="1.1.0.1473" />
     <PackageReference Include="SkiaSharp.Views.Forms" Version="1.68.1.1" />
-    <PackageReference Include="Syncfusion.Licensing" Version="18.1.0.44" />
-    <PackageReference Include="Syncfusion.Xamarin.Buttons" Version="18.1.0.44" />
-    <PackageReference Include="Syncfusion.Xamarin.Core" Version="18.1.0.44" />
-    <PackageReference Include="Syncfusion.Xamarin.DataSource" Version="18.1.0.44" />
-    <PackageReference Include="Syncfusion.Xamarin.GridCommon" Version="18.1.0.44" />
-    <PackageReference Include="Syncfusion.Xamarin.SfAutoComplete" Version="18.1.0.44" />
-    <PackageReference Include="Syncfusion.Xamarin.SfBadgeView" Version="18.1.0.44" />
-    <PackageReference Include="Syncfusion.Xamarin.SfComboBox" Version="18.1.0.44" />
-    <PackageReference Include="Syncfusion.Xamarin.SfDataGrid" Version="18.1.0.44" />
-    <PackageReference Include="Syncfusion.Xamarin.SfGauge" Version="18.1.0.44" />
-    <PackageReference Include="Syncfusion.Xamarin.SfImageEditor" Version="18.1.0.44" />
-    <PackageReference Include="Syncfusion.Xamarin.SfListView" Version="18.1.0.44" />
-    <PackageReference Include="Syncfusion.Xamarin.SfMaskedEdit" Version="18.1.0.44" />
-    <PackageReference Include="Syncfusion.Xamarin.SfParallaxView" Version="18.1.0.44" />
-    <PackageReference Include="Syncfusion.Xamarin.SfPdfViewer" Version="18.1.0.44" />
-    <PackageReference Include="Syncfusion.Xamarin.SfPicker" Version="18.1.0.44" />
-    <PackageReference Include="Syncfusion.Xamarin.SfPopupLayout" Version="18.1.0.44" />
-    <PackageReference Include="Syncfusion.Xamarin.SfPullToRefresh" Version="18.1.0.44" />
-    <PackageReference Include="Syncfusion.Xamarin.SfTabView" Version="18.1.0.44" />
+    <PackageReference Include="Syncfusion.Licensing" Version="18.1.0.46" />
+    <PackageReference Include="Syncfusion.Xamarin.Buttons" Version="18.1.0.46" />
+    <PackageReference Include="Syncfusion.Xamarin.Core" Version="18.1.0.46" />
+    <PackageReference Include="Syncfusion.Xamarin.DataSource" Version="18.1.0.46" />
+    <PackageReference Include="Syncfusion.Xamarin.GridCommon" Version="18.1.0.46" />
+    <PackageReference Include="Syncfusion.Xamarin.SfAutoComplete" Version="18.1.0.46" />
+    <PackageReference Include="Syncfusion.Xamarin.SfBadgeView" Version="18.1.0.46" />
+    <PackageReference Include="Syncfusion.Xamarin.SfComboBox" Version="18.1.0.46" />
+    <PackageReference Include="Syncfusion.Xamarin.SfDataGrid" Version="18.1.0.46" />
+    <PackageReference Include="Syncfusion.Xamarin.SfGauge" Version="18.1.0.46" />
+    <PackageReference Include="Syncfusion.Xamarin.SfImageEditor" Version="18.1.0.46" />
+    <PackageReference Include="Syncfusion.Xamarin.SfListView" Version="18.1.0.46" />
+    <PackageReference Include="Syncfusion.Xamarin.SfMaskedEdit" Version="18.1.0.46" />
+    <PackageReference Include="Syncfusion.Xamarin.SfParallaxView" Version="18.1.0.46" />
+    <PackageReference Include="Syncfusion.Xamarin.SfPdfViewer" Version="18.1.0.46" />
+    <PackageReference Include="Syncfusion.Xamarin.SfPicker" Version="18.1.0.46" />
+    <PackageReference Include="Syncfusion.Xamarin.SfPopupLayout" Version="18.1.0.46" />
+    <PackageReference Include="Syncfusion.Xamarin.SfPullToRefresh" Version="18.1.0.46" />
+    <PackageReference Include="Syncfusion.Xamarin.SfTabView" Version="18.1.0.46" />
     <PackageReference Include="Xam.Plugin.Media" Version="5.0.1" />
-    <PackageReference Include="Xamarin.Essentials" Version="1.5.2" />
-    <PackageReference Include="Xamarin.Forms" Version="4.5.0.617" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.5.3.1" />
+    <PackageReference Include="Xamarin.Forms" Version="4.6.0.726" />
     <PackageReference Include="Prism.DryIoc.Forms" Version="7.2.0.1422" />
     <PackageReference Include="Xamarin.Forms.DebugRainbows" Version="1.1.4" />
   </ItemGroup>
