@@ -19,6 +19,7 @@ using Prism;
 using Prism.Ioc;
 using UIKit;
 using Syncfusion.SfAutoComplete.XForms.iOS;
+using Lottie.Forms.iOS.Renderers;
 
 namespace XamlInteg.iOS
 {
@@ -37,8 +38,8 @@ namespace XamlInteg.iOS
         //
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
-global::Xamarin.Forms.Forms.Init();
-SfImageEditorRenderer.Init();
+            global::Xamarin.Forms.Forms.Init();
+            SfImageEditorRenderer.Init();
             SfAutoCompleteRenderer.Init();
             SfGaugeRenderer.Init();
             SfDigitalGaugeRenderer.Init();
@@ -57,8 +58,9 @@ SfImageEditorRenderer.Init();
             SfTextInputLayoutRenderer.Init();
             SfComboBoxRenderer.Init();
             SfCheckBoxRenderer.Init();
-
             SfPopupLayoutRenderer.Init();
+
+            AnimationViewRenderer.Init();
 
             LoadApplication(new App(new iOSInitializer()));
 

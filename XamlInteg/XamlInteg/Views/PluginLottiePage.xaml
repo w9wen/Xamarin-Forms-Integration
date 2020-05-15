@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="XamlInteg.Views.PluginLottiePage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:lottie="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
+    xmlns:prism="http://prismlibrary.com"
+    prism:ViewModelLocator.AutowireViewModel="True">
+    <ContentPage.Content>
+        <lottie:AnimationView
+            Animation="9844-loading-40-paperplane.json"
+            IsPlaying="True"
+            Loop="True" />
+    </ContentPage.Content>
+</ContentPage>

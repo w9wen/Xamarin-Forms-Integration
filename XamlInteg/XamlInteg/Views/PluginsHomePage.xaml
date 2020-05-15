@@ -9,5 +9,6 @@
     <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
         <button:SfButton Command="{prism:NavigateTo 'FingerprintPage'}" Text="Fingerprint" />
         <button:SfButton Command="{prism:NavigateTo 'PluginMediaPage'}" Text="Midia Plugin" />
+        <button:SfButton Command="{prism:NavigateTo 'PluginLottiePage'}" Text="Lottie Animation Plugin" />
     </StackLayout>
 </ContentPage>
