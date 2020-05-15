@@ -5,6 +5,7 @@ using Android.Net;
 using Android.OS;
 using Android.Runtime;
 using Android.Webkit;
+using Lottie.Forms.Droid;
 using Plugin.CurrentActivity;
 using Plugin.Permissions;
 using Prism;
@@ -33,6 +34,7 @@ namespace XamlInteg.Droid
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
 
+            AnimationViewRenderer.Init();
             SfPopupLayoutRenderer.Init();
 
             LoadApplication(new App(new AndroidInitializer()));
