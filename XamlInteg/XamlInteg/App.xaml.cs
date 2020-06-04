@@ -78,6 +78,7 @@ namespace XamlInteg
             containerRegistry.RegisterForNavigation<SfAutoCompletePage, SfAutoCompletePageViewModel>();
             containerRegistry.RegisterForNavigation<PluginMediaPage, PluginMediaPageViewModel>();
             containerRegistry.RegisterForNavigation<PluginLottiePage, PluginLottiePageViewModel>();
+            containerRegistry.RegisterForNavigation<PluginAutoSuggestBoxPage, PluginAutoSuggestBoxPageViewModel>();
         }
     }
 }

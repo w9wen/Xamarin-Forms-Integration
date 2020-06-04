@@ -200,6 +200,9 @@
     <PackageReference Include="Com.Airbnb.Xamarin.Forms.Lottie">
       <Version>3.1.2</Version>
     </PackageReference>
+    <PackageReference Include="dotMorten.Xamarin.Forms.AutoSuggestBox">
+      <Version>1.1.1</Version>
+    </PackageReference>
     <PackageReference Include="Plugin.Fingerprint">
       <Version>2.1.1</Version>
     </PackageReference>

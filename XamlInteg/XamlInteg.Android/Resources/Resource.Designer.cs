@@ -7143,6 +7143,7 @@ namespace XamlInteg.Droid
 			global::Shiny.Resource.Attribute.fontWeight = global::XamlInteg.Droid.Resource.Attribute.fontWeight;
 			global::Shiny.Resource.Attribute.ttcIndex = global::XamlInteg.Droid.Resource.Attribute.ttcIndex;
 			global::Shiny.Resource.Boolean.enable_system_alarm_service_default = global::XamlInteg.Droid.Resource.Boolean.enable_system_alarm_service_default;
+			global::Shiny.Resource.Boolean.enable_system_foreground_service_default = global::XamlInteg.Droid.Resource.Boolean.enable_system_foreground_service_default;
 			global::Shiny.Resource.Boolean.enable_system_job_service_default = global::XamlInteg.Droid.Resource.Boolean.enable_system_job_service_default;
 			global::Shiny.Resource.Boolean.workmanager_test_configuration = global::XamlInteg.Droid.Resource.Boolean.workmanager_test_configuration;
 			global::Shiny.Resource.Color.notification_action_color_filter = global::XamlInteg.Droid.Resource.Color.notification_action_color_filter;
@@ -21537,16 +21538,19 @@ namespace XamlInteg.Droid
 			public const int enable_system_alarm_service_default = 2131034115;
 			
 			// aapt resource value: 0x7F050004
-			public const int enable_system_job_service_default = 2131034116;
+			public const int enable_system_foreground_service_default = 2131034116;
 			
 			// aapt resource value: 0x7F050005
-			public const int is_tablet = 2131034117;
+			public const int enable_system_job_service_default = 2131034117;
 			
 			// aapt resource value: 0x7F050006
-			public const int mtrl_btn_textappearance_all_caps = 2131034118;
+			public const int is_tablet = 2131034118;
 			
 			// aapt resource value: 0x7F050007
-			public const int workmanager_test_configuration = 2131034119;
+			public const int mtrl_btn_textappearance_all_caps = 2131034119;
+			
+			// aapt resource value: 0x7F050008
+			public const int workmanager_test_configuration = 2131034120;
 			
 			static Boolean()
 			{
