@@ -79,6 +79,7 @@ namespace XamlInteg
             containerRegistry.RegisterForNavigation<PluginMediaPage, PluginMediaPageViewModel>();
             containerRegistry.RegisterForNavigation<PluginLottiePage, PluginLottiePageViewModel>();
             containerRegistry.RegisterForNavigation<PluginAutoSuggestBoxPage, PluginAutoSuggestBoxPageViewModel>();
+            containerRegistry.RegisterDialog<PrismCustomDialog>();
         }
     }
 }

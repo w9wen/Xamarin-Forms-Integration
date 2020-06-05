@@ -19,5 +19,6 @@
         <button:SfButton Command="{prism:NavigateTo 'PrismEventToCommandBehaviorPage'}" Text="EventToCommandBehavior" />
         <button:SfButton Command="{prism:NavigateTo 'PrismTabbedPage'}" Text="Tabbed Page" />
         <button:SfButton Command="{Binding PrismDisplayAlertCommad}" Text="Display Alert" />
+        <button:SfButton Command="{Binding ShowCustomDialog}" Text="Custom Dialog" />
     </StackLayout>
 </ContentPage>
