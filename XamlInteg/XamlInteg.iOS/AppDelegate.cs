@@ -38,6 +38,7 @@ namespace XamlInteg.iOS
         //
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
+            global::Rg.Plugins.Popup.Popup.Init();
             global::Xamarin.Forms.Forms.Init();
             SfImageEditorRenderer.Init();
             SfAutoCompleteRenderer.Init();

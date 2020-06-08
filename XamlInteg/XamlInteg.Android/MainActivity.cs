@@ -32,6 +32,7 @@ namespace XamlInteg.Droid
 
             Xamarin.Essentials.Platform.Init(this, bundle);
 
+            global::Rg.Plugins.Popup.Popup.Init(this, bundle);
             global::Xamarin.Forms.Forms.Init(this, bundle);
 
             AnimationViewRenderer.Init();

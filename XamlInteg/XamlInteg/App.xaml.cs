@@ -1,5 +1,6 @@
 ﻿using Prism;
 using Prism.Ioc;
+using Prism.Plugin.Popups;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using XamlInteg.ViewModels;
@@ -79,6 +80,8 @@ namespace XamlInteg
             containerRegistry.RegisterForNavigation<PluginMediaPage, PluginMediaPageViewModel>();
             containerRegistry.RegisterForNavigation<PluginLottiePage, PluginLottiePageViewModel>();
             containerRegistry.RegisterForNavigation<PluginAutoSuggestBoxPage, PluginAutoSuggestBoxPageViewModel>();
+
+            containerRegistry.RegisterPopupNavigationService();
             containerRegistry.RegisterDialog<PrismCustomDialog>();
         }
     }
